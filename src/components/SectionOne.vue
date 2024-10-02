@@ -1,35 +1,78 @@
 <template>
     <section class="section-one">
-        a
+      <div class="background-container"></div>
+  
+      <!-- Imagen Derecha -->
+      <div class="right-image-container">
+        <img src="../assets/section-one/Portada-ciclo-6.1.png" alt="Imagen derecha" class="responsive-image"/>
+      </div>
     </section>
-</template>
-
-<script>
-export default {
+  </template>
+  
+  <script>
+  export default {
     name: 'SectionOne',
-}
-</script>
-
-<style>
-.section-one {
-    height: 100vh; /* Altura de la sección para ocupar toda la vista */
-    background-image: url('../assets/Fondo-Portada-ciclo-6.png'); /* Cambia esta URL a la ruta de tu imagen */
-    background-size: cover; /* La imagen cubre toda la sección */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* No repetir la imagen */
-}
-
-/* Estilos específicos para tabletas */
-@media (max-width: 1024px) {
+  }
+  </script>
+  
+  <style scoped>
+  .section-one {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Para evitar desbordamiento */
+  }
+  
+  .background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/section-one/Fondo-Portada-ciclo-6.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .right-image-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%; 
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; 
+  }
+  
+  .responsive-image {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px), /* Tablets en modo retrato */
+         (min-width: 1024px) and (max-width: 1366px) /* Tablets en modo paisaje */ {
     .section-one {
-        height: 80vh; /* Ajustar altura en tabletas, si es necesario */
+      height: 100vh;
     }
-}
-
-/* Estilos específicos para dispositivos móviles */
-@media (max-width: 768px) {
-    .section-one {
-        height: 60vh; /* Ajustar altura en móviles, si es necesario */
+  
+    .background-container {
+      background-size: cover;
+      background-position: center;
     }
-}
-</style>
+  
+    .right-image-container {
+      width: 48%; 
+    }
+  }
+  
+  @media (max-width: 1024px) and (max-height: 768px) {
+    .right-image-container {
+      width: 55%;
+    }
+  }
+  </style>
+  
