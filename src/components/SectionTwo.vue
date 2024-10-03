@@ -6,8 +6,14 @@
     <!-- Texto sobre la imagen central -->
     <h2 class="center-text">Ayuda a controlar la causa principal<br> de la mayoría de los problemas de<br> salud bucal.</h2>
 
-    <!-- Imagen central -->
-    <img class="center-image" src="../assets/section-two/Diente_1.webp" alt="Center Image" />
+    <!-- Contenedor para la imagen central -->
+    <div class="image-container">
+      <!-- Imagen central -->
+      <img class="center-image" src="../assets/section-two/Diente_1.webp" alt="Center Image" />
+    </div>
+
+    <!-- Nueva imagen lateral fuera del contenedor de la imagen central -->
+    <img class="side-image" src="../assets/section-two/Escudo.webp" alt="Side Image" />
 
     <!-- Textos debajo de la imagen central -->
     <div class="bottom-texts">
@@ -63,12 +69,32 @@ export default {
   line-height: 1;
 }
 
+/* Contenedor para la imagen central */
+.image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
 /* Imagen central */
 .center-image {
-  width: 60%;
+  max-width: 400px; /* Mantener el tamaño original */
   height: auto;
-  max-width: 400px;
-  margin-bottom: 20px;
+}
+
+/* Imagen lateral, fuera del contenedor */
+.side-image {
+  position: absolute;
+  top: 50%;
+  left: 60%; /* Ajusta según la distancia deseada */
+  transform: translate(-50%, -30px); /* Mueve la imagen lateral un poco abajo y a la izquierda */
+  max-width: 150px;
+  width: 30%; /* Ajusta el tamaño según sea necesario */
+  height: auto;
 }
 
 /* Textos debajo de la imagen central */
@@ -87,8 +113,8 @@ export default {
 .bottom-texts p.light-font {
   font-family: 'ColgateReady-Light', sans-serif;
   color: #875315;
-  font-size: 2.2rem; /* Tamaño para los dos primeros párrafos */
-  line-height: 1; /* Sin interlineado */
+  font-size: 2.2rem;
+  line-height: 1;
   padding-top: 10px;
 }
 
@@ -96,8 +122,8 @@ export default {
 .bottom-texts p.small-font {
   font-family: 'ColgateReady-Light', sans-serif;
   color: #4d4c4b;
-  font-size: 0.8rem; /* Tamaño más pequeño */
-  line-height: 1; /* Sin interlineado */
+  font-size: 0.8rem;
+  line-height: 1;
   padding-top: 10px;
 }
 
@@ -108,7 +134,12 @@ export default {
   }
 
   .center-image {
-    width: 50%;
+    max-width: 400px;
+  }
+
+  .side-image {
+    left: 65%; /* Ajuste de distancia lateral para pantallas más pequeñas */
+    max-width: 130px;
   }
 
   .bottom-texts p {
@@ -127,7 +158,12 @@ export default {
   }
 
   .center-image {
-    width: 40%;
+    max-width: 400px;
+  }
+
+  .side-image {
+    left: 60%; /* Ajuste de la imagen lateral */
+    max-width: 150px;
   }
 
   .bottom-texts p {
