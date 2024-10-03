@@ -90,8 +90,8 @@ export default {
 .side-image {
   position: absolute;
   top: 50%;
-  left: 60%; /* Ajusta según la distancia deseada */
-  transform: translate(-50%, -30px); /* Mueve la imagen lateral un poco abajo y a la izquierda */
+  left: 70%; /* Ajustado más a la derecha */
+  transform: translate(-50%, -30px); /* Mueve la imagen lateral un poco abajo */
   max-width: 150px;
   width: 30%; /* Ajusta el tamaño según sea necesario */
   height: auto;
@@ -138,7 +138,7 @@ export default {
   }
 
   .side-image {
-    left: 65%; /* Ajuste de distancia lateral para pantallas más pequeñas */
+    left: 75%; /* Ajuste para tablets */
     max-width: 130px;
   }
 
@@ -162,7 +162,7 @@ export default {
   }
 
   .side-image {
-    left: 60%; /* Ajuste de la imagen lateral */
+    left: 70%; /* Ajuste de la imagen lateral */
     max-width: 150px;
   }
 
