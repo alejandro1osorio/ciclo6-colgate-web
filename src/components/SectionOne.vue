@@ -118,6 +118,8 @@ export default {
   font-size: 2.9rem;
   text-align: left;
   margin: 0;
+  line-height: 40px;
+  margin-bottom: 60px;
 }
 
 .top-left-image {
