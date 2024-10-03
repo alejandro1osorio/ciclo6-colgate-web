@@ -1,13 +1,78 @@
 <template>
-  <p>test</p>
+ a
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style>
+gwd-page {
+  display: block;
+}
+.gwd-inactive {
+  visibility: hidden;
+}
 
+.gwd-pagedeck {
+  position: relative;
+  display: block;
+}
+.gwd-pagedeck > .gwd-page.transparent {
+  opacity: 0;
+}
+.gwd-pagedeck > .gwd-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition-property: transform, opacity;
+}
+.gwd-pagedeck > .gwd-page.linear {
+  transition-timing-function: linear;
+}
+.gwd-pagedeck > .gwd-page.ease-in {
+  transition-timing-function: ease-in;
+}
+.gwd-pagedeck > .gwd-page.ease-out {
+  transition-timing-function: ease-out;
+}
+.gwd-pagedeck > .gwd-page.ease {
+  transition-timing-function: ease;
+}
+.gwd-pagedeck > .gwd-page.ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+.ease *,
+.ease-in *,
+.ease-in-out *,
+.ease-out *,
+.linear * {
+  transform: translateZ(0);
+}
+
+gwd-page.fs {
+  border: none;
+}
+
+gwd-image.scaled-proportionally > div.intermediate-element > img {
+        background-repeat: no-repeat;
+        background-position: 50%;
+      }
+      gwd-image {
+        display: inline-block;
+      }
+      gwd-image > div.intermediate-element {
+        width: 100%;
+        height: 100%;
+        transform-style: unset;
+      }
+      gwd-image > div.intermediate-element > img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      .gwd-lightbox {
+        overflow: hidden;
+      }
 </style>
