@@ -13,7 +13,7 @@
     <div class="bottom-texts">
       <p class="light-font">Con protección antibacteriana por 24 horas***<br> clínicamente probada.</p>
       <p class="light-font">Ayuda a prevenir los problemas<br> antes de que aparezcan.</p>
-      <p>*Reducción de placa antes de que ocurran los problemas; ayuda a proteger el esmalte contra la erosión dental.<br> **Reducción de placa bacteriana, con 3 meses de uso continuo.<br> ***Con cepillado 2x día después de 4 semanas de uso contínuo.</p>
+      <p class="small-font">*Reducción de placa antes de que ocurran los problemas; ayuda a proteger el esmalte contra la erosión dental.<br> **Reducción de placa bacteriana, con 3 meses de uso continuo.<br> ***Con cepillado 2x día después de 4 semanas de uso contínuo.</p>
     </div>
   </section>
 </template>
@@ -87,7 +87,16 @@ export default {
 .bottom-texts p.light-font {
   font-family: 'ColgateReady-Light', sans-serif;
   color: #875315;
-  font-size: 2.2rem; /* Aumentar el tamaño aquí para probar */
+  font-size: 2.2rem; /* Tamaño para los dos primeros párrafos */
+  line-height: 1; /* Sin interlineado */
+  padding-top: 10px;
+}
+
+/* Estilo para el último párrafo, el más pequeño */
+.bottom-texts p.small-font {
+  font-family: 'ColgateReady-Light', sans-serif;
+  color: #4d4c4b;
+  font-size: 0.8rem; /* Tamaño más pequeño */
   line-height: 1; /* Sin interlineado */
   padding-top: 10px;
 }
