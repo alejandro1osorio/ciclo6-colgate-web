@@ -97,9 +97,9 @@
 .top-left-image {
   position: absolute;
   top: 0;
-  left: 134px; /* Márgen izquierda */
-  width: 174px; /* Ancho de la imagen */
-  height: 150px;
+  left: 124px; /* Márgen izquierda */
+  width: 184px; /* Ancho de la imagen */
+  height: auto; /* 150px */
   z-index: 3;
   border-bottom-left-radius: 100px; /* Esquinas inferiores redondeadas */
   border-bottom-right-radius: 100px;
