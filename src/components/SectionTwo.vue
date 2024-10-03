@@ -4,7 +4,7 @@
     <img class="top-left-image" src="../assets/section-two/Logo Total.png" alt="Top Left Image" />
 
     <!-- Texto sobre la imagen central -->
-    <h2 class="center-text">Este es el texto sobre la imagen central</h2>
+    <h2 class="center-text">Ayuda a controlar la causa principal<br> de la mayoría de los problemas de<br> salud bucal.</h2>
 
     <!-- Imagen central -->
     <img class="center-image" src="../assets/section-two/Diente_1.webp" alt="Center Image" />
