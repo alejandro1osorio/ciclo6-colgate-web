@@ -11,9 +11,9 @@
 
     <!-- Textos debajo de la imagen central -->
     <div class="bottom-texts">
-      <p>Texto 1</p>
-      <p>Texto 2</p>
-      <p>Texto 3</p>
+      <p>Con protección antibacteriana por 24 horas***<br> clínicamente probada. </p>
+      <p>Ayuda a prevenir los problemas<br> antes de que aparezcan.</p>
+      <p>*Reducción de placa antes de que ocurran los problemas; ayuda a proteger el esmalte contra la erosión dental.<br> **Reducción de placa bacteriana, con 3 meses de uso continuo.<br> ***Con cepillado 2x día después de 4 semanas de uso contínuo.</p>
     </div>
   </section>
 </template>
