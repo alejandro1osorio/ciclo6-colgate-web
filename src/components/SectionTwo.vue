@@ -80,13 +80,16 @@ export default {
 
 .bottom-texts p {
   margin: 10px 0;
-  font-size: 1rem;
   word-wrap: break-word;
 }
 
-/* Aplica la tipografía ColgateReady-Light solo a los dos primeros párrafos */
-.light-font {
+/* Aplica la tipografía ColgateReady-Light y el tamaño a los 2 primeros párrafos */
+.bottom-texts p.light-font {
   font-family: 'ColgateReady-Light', sans-serif;
+  color: #875315;
+  font-size: 2.2rem; /* Aumentar el tamaño aquí para probar */
+  line-height: 1; /* Sin interlineado */
+  padding-top: 10px;
 }
 
 /* Estilos responsive para tablets */
