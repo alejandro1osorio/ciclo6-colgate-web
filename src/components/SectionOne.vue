@@ -33,6 +33,11 @@ export default {
 </script>
 
 <style scoped>
+@font-face {
+  font-family: 'ColgateReady-Regular';
+  src: url('../assets/fonts/ColgateReady-Regular.ttf') format('truetype');
+}
+
 /* Estructura base */
 .section-one {
   position: relative;
@@ -109,6 +114,7 @@ export default {
 }
 
 .responsive-text {
+  font-family: 'ColgateReady-Regular', sans-serif;
   font-size: 2.9rem;
   text-align: left;
   margin: 0;
