@@ -119,7 +119,7 @@ export default {
   text-align: left;
   margin: 0;
   line-height: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .top-left-image {
