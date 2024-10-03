@@ -47,8 +47,8 @@ export default {
 .top-left-image {
   position: absolute;
   top: 1px;
-  left: 20px;
-  width: 120px;
+  left: 8px;
+  width: 150px;
   height: auto;
 }
 
@@ -135,7 +135,7 @@ export default {
   }
 
   .top-left-image {
-    width: 180px;
+    width: 290px;
   }
 }
 </style>
