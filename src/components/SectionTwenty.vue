@@ -36,15 +36,15 @@ export default {
 </script>
 
 <style>
-body {
+/* body {
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 200vh; /* Altura aumentada para permitir el scroll */
+            height: 200vh; 
             background-color: #f0f0f0;
-        }
+        } */
 
         .container {
             width: 1180px;
