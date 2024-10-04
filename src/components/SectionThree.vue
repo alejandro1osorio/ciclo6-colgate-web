@@ -160,8 +160,8 @@ section {
 /* Clases para las imágenes en la esquina inferior derecha */
 .imagen-esquina-derecha-arriba {
   position: absolute;
-  bottom: 120px; /* Ajusta para posicionar la imagen arriba */
-  right: 20px;
+  bottom: 140px; /* Ajusta para posicionar la imagen arriba */
+  right: 56px;
   width: 250px; /* Ajusta el tamaño según sea necesario */
   height: auto;
   z-index: 1; /* Asegura que se superponga correctamente */
