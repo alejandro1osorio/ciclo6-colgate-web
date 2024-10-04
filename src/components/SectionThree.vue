@@ -41,6 +41,8 @@
         </div>
       </div>
 
+      <img src="../assets/section-three/Textos2.webp" alt="" class="subtititulo-intermedio">
+
       <!-- Contenedor de las imágenes 4 y 5 con sus imágenes inferiores -->
       <div class="contenedor-derecho" style="margin-right: 60px;">
         <div class="contenedor-imagen4">
@@ -166,6 +168,14 @@ section {
   width: 196px; /* Ajusta el tamaño según sea necesario */
   height: auto;
   z-index: 1; /* Para asegurarse de que esté debajo de las imágenes base */
+}
+
+.subtititulo-intermedio {
+  position: absolute;
+  left: 871px;
+  top: 198px;
+  width: 180px;
+  z-index: 4;
 }
 
 /* Clases para las imágenes debajo de las imágenes 4 y 5 */
