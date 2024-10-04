@@ -22,7 +22,7 @@
         <div class="imagen-superior" style="position: relative;">
           <img src="../assets/section-three/círculo.webp" alt="Imagen 3" />
           <img
-            src="../assets/section-three/Estaño.webp"
+            src="../assets/section-three/Fluoruro_1.webp"
             alt="Imagen Superior 2"
             class="imagen-superior-2"
           />
