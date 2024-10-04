@@ -1,34 +1,34 @@
 <template>
-  <section class="responsive-section">
+  <section class="responsive-section" @scroll="handleScroll" @click="handleSectionClick">
     <!-- Imagen en la esquina superior izquierda -->
     <img class="top-left-image" src="../assets/section-two/Logo Total.png" alt="Top Left Image" />
 
     <!-- Texto sobre la imagen central -->
-    <h2 class="center-text">Ayuda a controlar la causa principal<br> de la mayoría de los problemas de<br> salud bucal.</h2>
+    <h2 class="center-text animate-scroll">Ayuda a controlar la causa principal<br> de la mayoría de los problemas de<br> salud bucal.</h2>
 
     <!-- Contenedor para la imagen central -->
-    <div class="image-container">
+    <div class="image-container animate-scroll">
       <!-- Imagen central -->
       <img class="center-image" src="../assets/section-two/Diente_1.webp" alt="Center Image" />
     </div>
 
-    <!-- Nueva imagen lateral fuera del contenedor de la imagen central -->
-    <img class="side-image" src="../assets/section-two/Escudo.webp" alt="Side Image" />
+    <!-- Nueva imagen lateral -->
+    <img class="side-image animate-click" src="../assets/section-two/Escudo.webp" alt="Side Image" />
 
     <!-- Imágenes a la izquierda -->
-    <img class="left-image image-1" src="../assets/section-two/Caries_1.webp" alt="Left Image 1" />
-    <img class="left-image image-2" src="../assets/section-two/Erosión de Esmalte.webp" alt="Left Image 2" />
-    <img class="left-image image-3" src="../assets/section-two/Pigmentaciones_1.webp" alt="Left Image 3" />
-    <img class="left-image image-4" src="../assets/section-two/Gingivitis.webp" alt="Left Image 4" />
+    <img class="left-image image-1 animate-click" src="../assets/section-two/Caries_1.webp" alt="Left Image 1" />
+    <img class="left-image image-2 animate-click" src="../assets/section-two/Erosión de Esmalte.webp" alt="Left Image 2" />
+    <img class="left-image image-3 animate-click" src="../assets/section-two/Pigmentaciones_1.webp" alt="Left Image 3" />
+    <img class="left-image image-4 animate-click" src="../assets/section-two/Gingivitis.webp" alt="Left Image 4" />
 
     <!-- Imágenes a la derecha -->
-    <img class="right-image image-5" src="../assets/section-two/Cálculos_2.webp" alt="Right Image 1" />
-    <img class="right-image image-6" src="../assets/section-two/Placa_1.webp" alt="Right Image 2" />
-    <img class="right-image image-7" src="../assets/section-two/Halitosis_1.webp" alt="Right Image 3" />
-    <img class="right-image image-8" src="../assets/section-two/Sensibilidad_1.webp" alt="Right Image 4" />
+    <img class="right-image image-5 animate-click" src="../assets/section-two/Cálculos_2.webp" alt="Right Image 1" />
+    <img class="right-image image-6 animate-click" src="../assets/section-two/Placa_1.webp" alt="Right Image 2" />
+    <img class="right-image image-7 animate-click" src="../assets/section-two/Halitosis_1.webp" alt="Right Image 3" />
+    <img class="right-image image-8 animate-click" src="../assets/section-two/Sensibilidad_1.webp" alt="Right Image 4" />
 
     <!-- Textos debajo de la imagen central -->
-    <div class="bottom-texts">
+    <div class="bottom-texts animate-scroll">
       <p class="light-font">Con protección antibacteriana por 24 horas***<br> clínicamente probada.</p>
       <p class="light-font">Ayuda a prevenir los problemas<br> antes de que aparezcan.</p>
       <p class="small-font">*Reducción de placa antes de que ocurran los problemas; ayuda a proteger el esmalte contra la erosión dental.<br> **Reducción de placa bacteriana, con 3 meses de uso continuo.<br> ***Con cepillado 2x día después de 4 semanas de uso contínuo.</p>
@@ -39,10 +39,72 @@
 <script>
 export default {
   name: "SectionResponsive",
+  data() {
+    return {
+      imagesAnimated: false, // Controla si las imágenes ya han sido animadas
+      currentImageIndex: 0, // Índice de la imagen que se va a mostrar
+      totalImages: 8 // Total de imágenes laterales
+    };
+  },
+  methods: {
+    handleScroll() {
+      if (this.imagesAnimated) return; // Evita que se ejecute más de una vez
+      const elements = document.querySelectorAll('.animate-scroll');
+      elements.forEach(element => {
+        const position = element.getBoundingClientRect().top;
+        if (position < window.innerHeight) {
+          element.classList.add('visible');
+        }
+      });
+      this.imagesAnimated = true; // Marcar que las imágenes ya han sido animadas
+    },
+    handleSectionClick() {
+      const touchPoints = document.querySelectorAll('.animate-click');
+
+      // Asegurarse de que no se supere el total de imágenes
+      if (this.currentImageIndex < touchPoints.length) {
+        // Agregar la clase visible a la imagen actual
+        touchPoints[this.currentImageIndex].classList.add('visible');
+        this.currentImageIndex++; // Incrementar el índice para la próxima imagen
+      }
+    },
+    animateInitialElements() {
+      const elements = document.querySelectorAll('.animate-scroll');
+      elements.forEach(element => {
+        element.classList.add('visible'); // Mostrar todos los elementos al cargar
+      });
+    }
+  },
+  mounted() {
+    this.animateInitialElements(); // Animar elementos al cargar la página
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
 };
 </script>
 
 <style scoped>
+/* Estilos para la animación de scroll */
+.animate-scroll {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.animate-scroll.visible {
+  opacity: 1;
+}
+
+/* Estilos para la animación de las imágenes al hacer clic */
+.animate-click {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.animate-click.visible {
+  opacity: 1;
+}
 @font-face {
   font-family: 'ColgateReady-Light';
   src: url('../assets/fonts/ColgateReady-Light.ttf') format('truetype');
