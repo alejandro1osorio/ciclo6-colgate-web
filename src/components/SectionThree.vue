@@ -41,14 +41,33 @@
         </div>
       </div>
 
-      <!-- Contenedor de las imágenes 4 y 5 -->
+      <!-- Contenedor de las imágenes 4 y 5 con sus imágenes inferiores -->
       <div class="contenedor-derecho" style="margin-right: 60px;">
-        <img
-          src="../assets/section-three/Fómula Bio Activo.webp"
-          alt="Imagen 4"
-          style="margin-right: 19px;"
-        />
-        <img src="../assets/section-three/Fórmula No Bio Activo.webp" alt="Imagen 5" />
+        <div class="contenedor-imagen4">
+          <img
+            src="../assets/section-three/Fómula Bio Activo.webp"
+            alt="Imagen 4"
+            class="imagen-4"
+          />
+          <img
+            src="../assets/section-three/Bio Activo.webp"
+            alt="Otra Imagen Debajo de 4"
+            class="imagen-debajo-4"
+          />
+        </div>
+
+        <div class="contenedor-imagen5">
+          <img
+            src="../assets/section-three/Fórmula No Bio Activo.webp"
+            alt="Imagen 5"
+            class="imagen-5"
+          />
+          <img
+            src="../assets/section-three/No Bio Activo.png"
+            alt="Otra Imagen Debajo de 5"
+            class="imagen-debajo-5"
+          />
+        </div>
       </div>
     </div>
 
@@ -147,6 +166,22 @@ section {
   z-index: 1; /* Para asegurarse de que esté debajo de las imágenes base */
 }
 
+/* Clases para las imágenes debajo de las imágenes 4 y 5 */
+.contenedor-imagen4,
+.contenedor-imagen5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagen-debajo-4,
+.imagen-debajo-5 {
+  margin-top: 10px;
+  width: 150px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  z-index: 1;
+}
+
 /* Clase para la imagen adicional ubicada en la esquina inferior izquierda */
 .imagen-esquina {
   position: absolute;
@@ -196,6 +231,11 @@ section {
   .imagen-esquina-derecha-arriba,
   .imagen-esquina-derecha-abajo {
     width: 200px; /* Ajusta el tamaño en dispositivos más pequeños */
+  }
+
+  .imagen-debajo-4,
+  .imagen-debajo-5 {
+    width: 120px; /* Ajusta el tamaño en dispositivos más pequeños */
   }
 }
 </style>
