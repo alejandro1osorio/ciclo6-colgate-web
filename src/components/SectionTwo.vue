@@ -15,6 +15,18 @@
     <!-- Nueva imagen lateral fuera del contenedor de la imagen central -->
     <img class="side-image" src="../assets/section-two/Escudo.webp" alt="Side Image" />
 
+    <!-- Imágenes a la izquierda -->
+    <img class="left-image image-1" src="../assets/section-two/Caries_1.webp" alt="Left Image 1" />
+    <img class="left-image image-2" src="../assets/section-two/Erosión de Esmalte.webp" alt="Left Image 2" />
+    <img class="left-image image-3" src="../assets/section-two/Pigmentaciones_1.webp" alt="Left Image 3" />
+    <img class="left-image image-4" src="../assets/section-two/Gingivitis.webp" alt="Left Image 4" />
+
+    <!-- Imágenes a la derecha -->
+    <img class="right-image image-5" src="../assets/section-two/Placa_1.webp" alt="Right Image 1" />
+    <img class="right-image image-6" src="../assets/section-two/Placa_1.webp" alt="Right Image 2" />
+    <img class="right-image image-7" src="../assets/section-two/Halitosis_1.webp" alt="Right Image 3" />
+    <img class="right-image image-8" src="../assets/section-two/Sensibilidad_1.webp" alt="Right Image 4" />
+
     <!-- Textos debajo de la imagen central -->
     <div class="bottom-texts">
       <p class="light-font">Con protección antibacteriana por 24 horas***<br> clínicamente probada.</p>
@@ -95,6 +107,65 @@ export default {
   max-width: 150px;
   width: 30%; /* Ajusta el tamaño según sea necesario */
   height: auto;
+}
+
+/* Estilos para las imágenes a la izquierda */
+.left-image {
+  position: absolute;
+  width: 180px; /* Tamaño deseado */
+  height: auto; /* Mantiene la relación de aspecto */
+}
+
+/* Posicionamiento individual para cada imagen a la izquierda */
+.image-1 {
+  left: 29%;
+  top: 19%;
+}
+
+.image-2 {
+  width: 269px;
+  left: 19%;
+  top: 27%;
+}
+
+.image-3 {
+  width: 291px;
+  left: 17%;
+  top: 34%;
+}
+
+.image-4 {
+  left: 20%;
+  top: 41%;
+}
+
+/* Estilos para las imágenes a la derecha */
+.right-image {
+  position: absolute;
+  width: 180px; /* Tamaño deseado */
+  height: auto; /* Mantiene la relación de aspecto */
+}
+
+/* Posicionamiento individual para cada imagen a la derecha */
+.image-5 {
+  right: 31%;
+  top: 28%;
+}
+
+.image-6 {
+  right: 10%;
+  top: 45%;
+}
+
+.image-7 {
+  right: 26%;
+  top: 33%;
+}
+
+.image-8 {
+  width: 332px;
+  right: 18%;
+  top: 38%;
 }
 
 /* Textos debajo de la imagen central */
