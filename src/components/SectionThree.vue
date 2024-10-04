@@ -51,6 +51,13 @@
         <img src="../assets/section-three/Fórmula No Bio Activo.webp" alt="Imagen 5" />
       </div>
     </div>
+
+    <!-- Imagen adicional ubicada en la esquina inferior izquierda -->
+    <img
+      src="../assets/section-three/Textos_1.webp"
+      alt="Imagen Esquina Inferior Izquierda"
+      class="imagen-esquina"
+    />
   </section>
 </template>
 
@@ -128,6 +135,16 @@ section {
   z-index: 1; /* Para asegurarse de que esté debajo de las imágenes base */
 }
 
+/* Clase para la imagen adicional ubicada en la esquina inferior izquierda */
+.imagen-esquina {
+  position: absolute;
+  bottom: 66px;
+  left: 290px;
+  width: 250px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  z-index: 1; /* Asegura que se superponga correctamente */
+}
+
 /* Estilos responsivos para tablet */
 @media (max-width: 1024px) {
   .contenedor-izquierdo {
@@ -139,6 +156,10 @@ section {
     display: flex;
     flex-direction: row;
     gap: 10px; /* Espacio entre las imágenes */
+  }
+
+  .imagen-esquina {
+    width: 200px; /* Ajusta el tamaño en dispositivos más pequeños */
   }
 }
 </style>
