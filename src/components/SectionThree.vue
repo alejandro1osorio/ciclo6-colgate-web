@@ -54,6 +54,7 @@
             alt="Otra Imagen Debajo de 4"
             class="imagen-debajo-4"
           />
+          <img src="../assets/section-three/LLave .webp" alt="" class="llave1">
         </div>
 
         <div class="contenedor-imagen5">
@@ -67,6 +68,7 @@
             alt="Otra Imagen Debajo de 5"
             class="imagen-debajo-5"
           />
+          <img src="../assets/section-three/llave 2.webp" alt="" class="llave2">
         </div>
       </div>
     </div>
@@ -180,6 +182,22 @@ section {
   width: 150px; /* Ajusta el tamaño según sea necesario */
   height: auto;
   z-index: 1;
+}
+
+.llave1 {
+  position: absolute;
+    top: 381px;
+    left: 750px;
+    width: 76px;
+    z-index: 3;
+}
+
+.llave2 {
+  position: absolute;
+    top: 404px;
+    left: 1082px;
+    width: 76px;
+    z-index: 3;
 }
 
 /* Clase para la imagen adicional ubicada en la esquina inferior izquierda */
