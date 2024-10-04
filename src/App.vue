@@ -4,6 +4,8 @@
     <SectionOne />
     <SectionTwo />
     <Hero />
+
+    <SectionTwenty />
     <Features />
     <Footer />
   </div>
@@ -14,6 +16,7 @@ import Header from './components/Header.vue';
 import SectionOne from './components/SectionOne.vue';
 import SectionTwo from './components/SectionTwo.vue';
 import Hero from './components/Hero.vue';
+import SectionTwenty from './components/SectionTwenty.vue';
 import Features from './components/Features.vue';
 import Footer from './components/Footer.vue';
 
@@ -24,6 +27,7 @@ export default {
     SectionOne,
     SectionTwo,
     Hero,
+    SectionTwenty,
     Features,
     Footer,
   },
