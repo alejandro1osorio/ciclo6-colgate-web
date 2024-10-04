@@ -22,7 +22,7 @@
     <img class="left-image image-4" src="../assets/section-two/Gingivitis.webp" alt="Left Image 4" />
 
     <!-- Imágenes a la derecha -->
-    <img class="right-image image-5" src="../assets/section-two/Placa_1.webp" alt="Right Image 1" />
+    <img class="right-image image-5" src="../assets/section-two/Cálculos_2.webp" alt="Right Image 1" />
     <img class="right-image image-6" src="../assets/section-two/Placa_1.webp" alt="Right Image 2" />
     <img class="right-image image-7" src="../assets/section-two/Halitosis_1.webp" alt="Right Image 3" />
     <img class="right-image image-8" src="../assets/section-two/Sensibilidad_1.webp" alt="Right Image 4" />
@@ -119,24 +119,24 @@ export default {
 /* Posicionamiento individual para cada imagen a la izquierda */
 .image-1 {
   left: 29%;
-  top: 19%;
+  top: 27%;
 }
 
 .image-2 {
   width: 269px;
   left: 19%;
-  top: 27%;
+  top: 34%;
 }
 
 .image-3 {
   width: 291px;
   left: 17%;
-  top: 34%;
+  top: 40%;
 }
 
 .image-4 {
   left: 20%;
-  top: 41%;
+  top: 47%;
 }
 
 /* Estilos para las imágenes a la derecha */
@@ -148,24 +148,27 @@ export default {
 
 /* Posicionamiento individual para cada imagen a la derecha */
 .image-5 {
-  right: 31%;
+  width: 271px;
+  right: 28%;
   top: 28%;
 }
 
 .image-6 {
-  right: 10%;
-  top: 45%;
+  width: 287px;
+  right: 22%;
+  top: 35%;
 }
 
 .image-7 {
-  right: 26%;
-  top: 33%;
+  width: 268px;
+  right: 19%;
+  top: 39%;
 }
 
 .image-8 {
-  width: 332px;
-  right: 18%;
-  top: 38%;
+  width: 358px;
+  right: 17%;
+  top: 59%;
 }
 
 /* Textos debajo de la imagen central */
@@ -196,6 +199,11 @@ export default {
   font-size: 0.8rem;
   line-height: 1;
   padding-top: 10px;
+}
+
+.center-text {
+  margin-top: 90px; /* Márgen superior */
+  margin-bottom: 50px; /* Márgen inferior */
 }
 
 /* Estilos responsive para tablets */
