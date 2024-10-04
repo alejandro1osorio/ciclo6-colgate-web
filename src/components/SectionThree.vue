@@ -58,6 +58,18 @@
       alt="Imagen Esquina Inferior Izquierda"
       class="imagen-esquina"
     />
+
+    <!-- Imagenes en la esquina inferior derecha -->
+    <img
+      src="../assets/section-three/Textos2.webp"
+      alt="Imagen Esquina Inferior Derecha 1"
+      class="imagen-esquina-derecha-arriba"
+    />
+    <img
+      src="../assets/section-three/Logo Total SNaP.webp"
+      alt="Imagen Esquina Inferior Derecha 2"
+      class="imagen-esquina-derecha-abajo"
+    />
   </section>
 </template>
 
@@ -145,6 +157,25 @@ section {
   z-index: 1; /* Asegura que se superponga correctamente */
 }
 
+/* Clases para las imágenes en la esquina inferior derecha */
+.imagen-esquina-derecha-arriba {
+  position: absolute;
+  bottom: 120px; /* Ajusta para posicionar la imagen arriba */
+  right: 20px;
+  width: 250px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  z-index: 1; /* Asegura que se superponga correctamente */
+}
+
+.imagen-esquina-derecha-abajo {
+  position: absolute;
+  bottom: 46px; /* Ajusta para posicionar la imagen abajo */
+  right: 100px;
+  width: 130px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  z-index: 1; /* Asegura que se superponga correctamente */
+}
+
 /* Estilos responsivos para tablet */
 @media (max-width: 1024px) {
   .contenedor-izquierdo {
@@ -159,6 +190,11 @@ section {
   }
 
   .imagen-esquina {
+    width: 200px; /* Ajusta el tamaño en dispositivos más pequeños */
+  }
+
+  .imagen-esquina-derecha-arriba,
+  .imagen-esquina-derecha-abajo {
     width: 200px; /* Ajusta el tamaño en dispositivos más pequeños */
   }
 }
