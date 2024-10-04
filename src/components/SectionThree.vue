@@ -17,6 +17,12 @@
             alt="Imagen Superior 1"
             class="imagen-superior-1"
           />
+          <!-- Nueva imagen debajo de la imagen 1 -->
+          <img
+            src="../assets/section-three/Texto Estaño.webp"
+            alt="Imagen Inferior 1"
+            class="imagen-inferior-1"
+          />
         </div>
         <img src="../assets/section-three/+.webp" alt="Imagen 2" />
         <div class="imagen-superior" style="position: relative;">
@@ -25,6 +31,12 @@
             src="../assets/section-three/Fluoruro_1.webp"
             alt="Imagen Superior 2"
             class="imagen-superior-2"
+          />
+          <!-- Nueva imagen debajo de la imagen 3 -->
+          <img
+            src="../assets/section-three/Texto Fluoruro.webp"
+            alt="Imagen Inferior 2"
+            class="imagen-inferior-2"
           />
         </div>
       </div>
@@ -102,6 +114,18 @@ section {
   width: 170px; /* Ajusta el tamaño si es necesario */
   height: auto;
   z-index: 1; /* Para asegurarse de que esté encima de las imágenes base */
+}
+
+/* Clases para las imágenes que se colocan debajo de las imágenes 1 y 3 */
+.imagen-inferior-1,
+.imagen-inferior-2 {
+  position: absolute;
+  top: 100%; /* Coloca la imagen debajo de la imagen base */
+  left: 50%; /* Centrar horizontalmente */
+  transform: translate(-50%, 10px); /* Ajusta para posicionar debajo */
+  width: 196px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  z-index: 1; /* Para asegurarse de que esté debajo de las imágenes base */
 }
 
 /* Estilos responsivos para tablet */
