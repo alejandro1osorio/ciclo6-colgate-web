@@ -3,6 +3,7 @@
     <!-- <Header /> -->
     <SectionOne />
     <SectionTwo />
+    <SectionThree />
     <Hero />
 
     <SectionTwenty />
@@ -15,6 +16,7 @@
 import Header from './components/Header.vue';
 import SectionOne from './components/SectionOne.vue';
 import SectionTwo from './components/SectionTwo.vue';
+import SectionThree from './components/SectionThree.vue';
 import Hero from './components/Hero.vue';
 import SectionTwenty from './components/SectionTwenty.vue';
 import Features from './components/Features.vue';
@@ -26,6 +28,7 @@ export default {
     Header,
     SectionOne,
     SectionTwo,
+    SectionThree,
     Hero,
     SectionTwenty,
     Features,
