@@ -35,6 +35,9 @@
       <img src="../assets/section-four/Fosfato.png" alt="Nueva Imagen 1" class="extra-image-new image-one-new" />
       <img src="../assets/section-four/Nitrato.png" alt="Nueva Imagen 2" class="extra-image-new image-two-new" />
       <img src="../assets/section-four/Fluoruro de estaño.png" alt="Nueva Imagen 3" class="extra-image-new image-three-new" />
+
+      <!-- Imagen en la esquina superior izquierda -->
+      <img src="../assets/section-four/Fluoruro de estaño.png" alt="Logo" class="image-top-left" />
     </div>
   </div>
 </template>
@@ -161,6 +164,15 @@ export default {
   top: calc(30% + 100px); /* Centramos la nueva imagen sobre la imagen original */
   left: calc(3% + 100px);
   width: 110px; /* Ajusta el tamaño de la nueva imagen 3 */
+}
+
+/* Imagen en la esquina superior izquierda */
+.image-top-left {
+  position: absolute;
+  top: 94px;
+  left: 153px;
+  width: 194px; /* Ajusta el tamaño según lo necesites */
+  z-index: 10; /* Asegurar que esté encima de todos los elementos */
 }
 
 /* Estilos del modal */
