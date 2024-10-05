@@ -157,23 +157,6 @@ export default {
   opacity: 1;
 }
 
-.llave1 {
-  position: absolute;
-  top: 394px;
-  left: 766px;
-  width: 60px;
-  z-index: 3;
-}
-
-.llave2 {
-  position: absolute;
-  top: 404px;
-  left: 1091px;
-  width: 54px;
-  z-index: 3;
-}
-
-
 section {
   position: relative;
   margin-top: 20px;
