@@ -122,7 +122,7 @@ export default {
 }
 
 .image-two-extra {
-  top: 47%;
+  top: 48%;
   left: 16%;
   width: 192px; /* Ajusta el tamaño de la imagen 2 */
   transform: rotate(236deg);
