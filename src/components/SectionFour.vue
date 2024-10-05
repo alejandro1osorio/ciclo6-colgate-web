@@ -38,6 +38,9 @@
 
       <!-- Imagen en la esquina superior izquierda -->
       <img src="../assets/section-four/Fluoruro de estaño.png" alt="Logo" class="image-top-left" />
+
+      <!-- Nueva imagen debajo de la imagen 3 -->
+      <img src="../assets/section-four/Logo Total SNaP.png" alt="Nueva Imagen Debajo de la Imagen 3" class="image-below-three" />
     </div>
   </div>
 </template>
@@ -173,6 +176,15 @@ export default {
   left: 153px;
   width: 194px; /* Ajusta el tamaño según lo necesites */
   z-index: 10; /* Asegurar que esté encima de todos los elementos */
+}
+
+/* Nueva imagen debajo de la imagen 3 */
+.image-below-three {
+  position: absolute;
+  top: calc(32% + 218px); /* Ubica la nueva imagen justo debajo de la imagen 3 */
+  left: 46px;
+  width: 123px; /* Ajusta el tamaño de la nueva imagen */
+  z-index: 7; /* Asegurar que esté encima de las demás imágenes */
 }
 
 /* Estilos del modal */
