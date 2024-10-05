@@ -37,7 +37,7 @@
       <img src="../assets/section-four/Fluoruro de estaño.png" alt="Nueva Imagen 3" class="extra-image-new image-three-new" />
 
       <!-- Imagen en la esquina superior izquierda -->
-      <img src="../assets/section-four/Fluoruro de estaño.png" alt="Logo" class="image-top-left" />
+      <img src="../assets/section-four/Texto.webp" alt="Logo" class="image-top-left" />
 
       <!-- Nueva imagen debajo de la imagen 3 -->
       <img src="../assets/section-four/Logo Total SNaP.png" alt="Nueva Imagen Debajo de la Imagen 3" class="image-below-three" />
@@ -106,16 +106,18 @@ export default {
 /* Estilo para el iframe que actúa como imagen de fondo */
 .iframe-center {
   background: url('../assets/section-four/Botón\ Video.png');
+  background-size: cover;
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 300px;
-  height: 300px;
+  width: 220px; /* Tamaño reducido */
+  height: 220px; /* Tamaño reducido */
   transform: translate(-50%, -50%);
   border-radius: 50%;
   z-index: 4;
   cursor: pointer;
 }
+
 
 /* Imágenes adicionales al lado izquierdo del iframe */
 .extra-image {
@@ -132,49 +134,49 @@ export default {
 /* Ubicación y tamaño personalizado para cada imagen original */
 .image-one-extra {
   top: 25%;
-  left: 18%;
+  left: 21%;
   width: 194px;
   transform: rotate(56deg);
 }
 
 .image-two-extra {
   top: 48%;
-  left: 16%;
+  left: 19%;
   width: 192px;
   transform: rotate(236deg);
 }
 
 .image-three-extra {
   top: 30%;
-  left: 3%;
+  left: 6%;
   width: 200px;
 }
 
 /* Nuevas imágenes centradas sobre las anteriores */
 .image-one-new {
   top: calc(25% + 97px); /* Centramos la nueva imagen sobre la imagen original */
-  left: calc(18% + 97px);
+  left: calc(21% + 97px);
   width: 100px; /* Ajusta el tamaño de la nueva imagen 1 */
 }
 
 .image-two-new {
   top: calc(48% + 96px); /* Centramos la nueva imagen sobre la imagen original */
-  left: calc(16% + 96px);
+  left: calc(19% + 96px);
   width: 90px; /* Ajusta el tamaño de la nueva imagen 2 */
 }
 
 .image-three-new {
   top: calc(30% + 100px); /* Centramos la nueva imagen sobre la imagen original */
-  left: calc(3% + 100px);
+  left: calc(6% + 100px);
   width: 110px; /* Ajusta el tamaño de la nueva imagen 3 */
 }
 
 /* Imagen en la esquina superior izquierda */
 .image-top-left {
   position: absolute;
-  top: 94px;
-  left: 153px;
-  width: 194px; /* Ajusta el tamaño según lo necesites */
+  top: 110px;
+  left: 100px;
+  width: 397px; /* Ajusta el tamaño según lo necesites */
   z-index: 10; /* Asegurar que esté encima de todos los elementos */
 }
 
@@ -182,7 +184,7 @@ export default {
 .image-below-three {
   position: absolute;
   top: calc(32% + 218px); /* Ubica la nueva imagen justo debajo de la imagen 3 */
-  left: 46px;
+  left: 77px;
   width: 123px; /* Ajusta el tamaño de la nueva imagen */
   z-index: 7; /* Asegurar que esté encima de las demás imágenes */
 }
