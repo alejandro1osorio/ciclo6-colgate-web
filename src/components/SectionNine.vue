@@ -11,6 +11,8 @@
 
       <!-- textos -->
       <img src="../assets/section-nine/Textos_2.webp" class="img-below-new" alt="Imagen Debajo" />
+
+      <img src="../assets/section-nine/Sello condiciones.webp" class="img-below-new-2" alt="Otra Imagen Debajo" />
     </div>
   </div>
 </template>
@@ -96,6 +98,15 @@ export default {
   z-index: 6; /* Z-index diferente para que no afecte la imagen superior izquierda */
 }
 
+/* Nueva imagen debajo de img-below-new */
+.img-below-new-2 {
+  position: absolute;
+  top: 240px; /* Ajustada para estar debajo de img-below-new */
+  left: 225px;
+  width: 100px;
+  z-index: 9; /* Z-index más alto para que esté encima de todas las demás imágenes */
+}
+
 
 /* Media queries para tablets, priorizando 1180x820 */
 @media (max-width: 1180px) and (max-height: 820px) {
@@ -139,6 +150,12 @@ export default {
   top: 216px; /* Ajuste de ubicación para otras resoluciones de tablet */
 }
 
+.img-below-new-2 {
+  width: 80px;
+  top: 230px; /* Ajuste de ubicación para tablets */
+}
+
+
 }
 
 /* Otras resoluciones de tablet */
@@ -172,5 +189,11 @@ export default {
   .img-new {
     width: 373px; /* Tamaño ajustado para otras resoluciones de tablet */
   }
+
+  .img-below-new-2 {
+  width: 244px;
+  top: 388px; /* Ajuste de ubicación para otras resoluciones de tablet */
+}
+
 }
 </style>
