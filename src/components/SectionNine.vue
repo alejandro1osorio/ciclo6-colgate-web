@@ -6,6 +6,11 @@
       <img src="../assets/section-nine/Crema dental.webp" class="img2" alt="Imagen 2" />
       <img src="../assets/section-nine/ENjuague.webp" class="img3" alt="Imagen 3" />
       <img src="../assets/section-nine/Sello_1.webp" class="img4" alt="Imagen 4" />
+      <!-- Nueva imagen en la esquina superior izquierda -->
+      <img src="../assets/section-nine/Logo Periogard.webp" class="img-new" alt="Nueva Imagen" />
+
+      <!-- textos -->
+      <img src="../assets/section-nine/Textos_2.webp" class="img-below-new" alt="Imagen Debajo" />
     </div>
   </div>
 </template>
@@ -44,60 +49,96 @@ export default {
 .img1 {
   position: absolute;
   z-index: 4;
-  top: 20%;  /* Ubicación individual */
-  right: 10%; /* Ubicación individual */
-  width: 300px; /* Tamaño individual */
+  top: 20%; 
+  right: 10%; 
+  width: 300px; 
 }
 
 .img2 {
   position: absolute;
   z-index: 6;
-  top: 10%;  /* Ubicación individual */
-  right: 5%;  /* Ubicación individual */
-  width: 320px; /* Tamaño individual */
+  top: 10%; 
+  right: 5%; 
+  width: 320px; 
 }
 
 .img3 {
   position: absolute;
   z-index: 3;
-  top: 60%;  /* Ubicación individual */
-  right: 20%; /* Ubicación individual */
-  width: 280px; /* Tamaño individual */
+  top: 60%;  
+  right: 20%; 
+  width: 280px; 
 }
 
 .img4 {
   position: absolute;
   z-index: 5;
-  top: 40%;  /* Ubicación individual */
-  right: 15%; /* Ubicación individual */
-  width: 310px; /* Tamaño individual */
+  top: 40%;  
+  right: 15%; 
+  width: 310px; 
 }
+
+/* Nueva imagen en la esquina superior izquierda */
+.img-new {
+  position: absolute;
+  top: 0; /* Tocando el borde superior */
+  left: 98px; /* Tocando el borde izquierdo */
+  width: 100px; /* Ajuste de tamaño */
+  z-index: 7; /* Por encima de todas las otras imágenes */
+}
+
+/* Nueva imagen debajo de la imagen superior izquierda */
+.img-below-new {
+  position: absolute;
+  top: 120px; /* Ajuste para estar debajo de la imagen superior izquierda */
+  left: 75px; /* Alineada con la imagen superior izquierda */
+  width: 100px;
+  z-index: 6; /* Z-index diferente para que no afecte la imagen superior izquierda */
+}
+
 
 /* Media queries para tablets, priorizando 1180x820 */
 @media (max-width: 1180px) and (max-height: 820px) {
   .img1 {
-    width: 150px; /* Tamaño reducido para imagen 1 */
-    top: 15%; /* Ajuste individual */
-    right: 8%; /* Ajuste individual */
+    width: 150px; 
+    top: 15%; 
+    right: 8%; 
   }
   
   .img2 {
-    width: 160px; /* Tamaño reducido para imagen 2 */
-    top: 12%; /* Ajuste individual */
-    right: 5%; /* Ajuste individual */
+    width: 160px; 
+    top: 12%; 
+    right: 5%; 
   }
 
   .img3 {
-    width: 140px; /* Tamaño reducido para imagen 3 */
-    top: 55%; /* Ajuste individual */
-    right: 18%; /* Ajuste individual */
+    width: 140px; 
+    top: 55%; 
+    right: 18%; 
   }
 
   .img4 {
-    width: 170px; /* Tamaño reducido para imagen 4 */
-    top: 35%; /* Ajuste individual */
-    right: 12%; /* Ajuste individual */
+    width: 170px; 
+    top: 35%; 
+    right: 12%; 
   }
+
+  .img-new {
+    width: 80px; /* Tamaño ajustado para tablets */
+  }
+
+  /* Para resolución de tablet, priorizando 1180x820 */
+.img-below-new {
+  width: 80px; 
+  top: 110px; /* Ajuste de ubicación para tablets */
+}
+
+/* Para otras resoluciones de tablet */
+.img-below-new {
+  width: 518px; /* Ajuste de tamaño para otras resoluciones de tablet */
+  top: 216px; /* Ajuste de ubicación para otras resoluciones de tablet */
+}
+
 }
 
 /* Otras resoluciones de tablet */
@@ -126,6 +167,10 @@ export default {
     width: 124px;
     top: 80%;
     right: 1%;
+  }
+
+  .img-new {
+    width: 373px; /* Tamaño ajustado para otras resoluciones de tablet */
   }
 }
 </style>
