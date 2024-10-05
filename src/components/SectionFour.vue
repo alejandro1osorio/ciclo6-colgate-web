@@ -26,11 +26,15 @@
         </div>
       </div>
 
-      <!-- Imágenes adicionales al lado izquierdo del iframe -->
+      <!-- Imágenes originales al lado izquierdo del iframe -->
       <img src="../assets/section-four/Engranaje 1_1.png" alt="Imagen 1" class="extra-image image-one-extra" />
       <img src="../assets/section-four/Engranaje 2_1.png" alt="Imagen 2" class="extra-image image-two-extra" />
       <img src="../assets/section-four/Engranaje 3_1.png" alt="Imagen 3" class="extra-image image-three-extra" />
-      
+
+      <!-- Nuevas imágenes centradas sobre las anteriores -->
+      <img src="../assets/section-four/Fosfato.png" alt="Nueva Imagen 1" class="extra-image-new image-one-new" />
+      <img src="../assets/section-four/Nitrato.png" alt="Nueva Imagen 2" class="extra-image-new image-two-new" />
+      <img src="../assets/section-four/Fluoruro de estaño.png" alt="Nueva Imagen 3" class="extra-image-new image-three-new" />
     </div>
   </div>
 </template>
@@ -113,25 +117,50 @@ export default {
   z-index: 5; /* Asegurar que estén por encima de los otros elementos */
 }
 
-/* Ubicación y tamaño personalizado para cada imagen */
+.extra-image-new {
+  position: absolute;
+  z-index: 6; /* Encima de las imágenes anteriores */
+  transform: translate(-50%, -50%); /* Centramos la nueva imagen sobre la original */
+}
+
+/* Ubicación y tamaño personalizado para cada imagen original */
 .image-one-extra {
   top: 25%;
   left: 18%;
-  width: 194px; /* Ajusta el tamaño de la imagen 1 */
+  width: 194px;
   transform: rotate(56deg);
 }
 
 .image-two-extra {
   top: 48%;
   left: 16%;
-  width: 192px; /* Ajusta el tamaño de la imagen 2 */
+  width: 192px;
   transform: rotate(236deg);
 }
 
 .image-three-extra {
   top: 30%;
   left: 3%;
-  width: 200px; /* Ajusta el tamaño de la imagen 3 */
+  width: 200px;
+}
+
+/* Nuevas imágenes centradas sobre las anteriores */
+.image-one-new {
+  top: calc(25% + 97px); /* Centramos la nueva imagen sobre la imagen original */
+  left: calc(18% + 97px);
+  width: 100px; /* Ajusta el tamaño de la nueva imagen 1 */
+}
+
+.image-two-new {
+  top: calc(48% + 96px); /* Centramos la nueva imagen sobre la imagen original */
+  left: calc(16% + 96px);
+  width: 90px; /* Ajusta el tamaño de la nueva imagen 2 */
+}
+
+.image-three-new {
+  top: calc(30% + 100px); /* Centramos la nueva imagen sobre la imagen original */
+  left: calc(3% + 100px);
+  width: 110px; /* Ajusta el tamaño de la nueva imagen 3 */
 }
 
 /* Estilos del modal */
