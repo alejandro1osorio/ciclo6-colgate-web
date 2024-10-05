@@ -1,51 +1,63 @@
 <template>
-  <section>
+  <section ref="section">
     <!-- Imagen Izquierda -->
     <img
       src="../assets/section-three/Logo Total.png"
       alt="Imagen Izquierda"
-      class="imagen-izquierda"
+      class="imagen-izquierda animate-on-scroll"
     />
 
-    <div class="imagenes-abajo">
+    <div class="imagenes-abajo animate-on-scroll">
       <!-- Contenedor de las imágenes 1, 2, y 3 -->
       <div class="contenedor-izquierdo" style="margin-left: 60px;">
         <div class="imagen-superior" style="position: relative;">
-          <img src="../assets/section-three/círculo.webp" alt="Imagen 1" />
+          <img
+            src="../assets/section-three/círculo.webp"
+            alt="Imagen 1"
+            class="imagen-rotacion"
+          />
           <img
             src="../assets/section-three/Estaño.webp"
             alt="Imagen Superior 1"
-            class="imagen-superior-1"
+            class="imagen-superior-1 animate-on-scroll"
           />
           <!-- Nueva imagen debajo de la imagen 1 -->
           <img
             src="../assets/section-three/Texto Estaño.webp"
             alt="Imagen Inferior 1"
-            class="imagen-inferior-1"
+            class="imagen-inferior-1 animate-on-scroll"
           />
         </div>
-        <img src="../assets/section-three/+.webp" alt="Imagen 2" />
+        <img src="../assets/section-three/+.webp" alt="Imagen 2" class="animate-on-scroll" />
         <div class="imagen-superior" style="position: relative;">
-          <img src="../assets/section-three/círculo.webp" alt="Imagen 3" />
+          <img
+            src="../assets/section-three/círculo.webp"
+            alt="Imagen 3"
+            class="imagen-rotacion"
+          />
           <img
             src="../assets/section-three/Fluoruro_1.webp"
             alt="Imagen Superior 2"
-            class="imagen-superior-2"
+            class="imagen-superior-2 animate-on-scroll"
           />
           <!-- Nueva imagen debajo de la imagen 3 -->
           <img
             src="../assets/section-three/Texto Fluoruro.webp"
             alt="Imagen Inferior 2"
-            class="imagen-inferior-2"
+            class="imagen-inferior-2 animate-on-scroll"
           />
         </div>
       </div>
 
-      <img src="../assets/section-three/Textos2.webp" alt="" class="subtititulo-intermedio">
+      <img
+        src="../assets/section-three/Textos2.webp"
+        alt="Subtítulo Intermedio"
+        class="subtititulo-intermedio animate-on-scroll"
+      />
 
       <!-- Contenedor de las imágenes 4 y 5 con sus imágenes inferiores -->
       <div class="contenedor-derecho" style="margin-right: 60px;">
-        <div class="contenedor-imagen4">
+        <div class="contenedor-imagen4 animate-on-scroll">
           <img
             src="../assets/section-three/Fómula Bio Activo.webp"
             alt="Imagen 4"
@@ -56,10 +68,10 @@
             alt="Otra Imagen Debajo de 4"
             class="imagen-debajo-4"
           />
-          <img src="../assets/section-three/LLave .webp" alt="" class="llave1">
+          <img src="../assets/section-three/LLave .webp" alt="Llave 1" class="llave1 animate-on-scroll" />
         </div>
 
-        <div class="contenedor-imagen5">
+        <div class="contenedor-imagen5 animate-on-scroll">
           <img
             src="../assets/section-three/Fórmula No Bio Activo.webp"
             alt="Imagen 5"
@@ -70,7 +82,7 @@
             alt="Otra Imagen Debajo de 5"
             class="imagen-debajo-5"
           />
-          <img src="../assets/section-three/llave 2.webp" alt="" class="llave2">
+          <img src="../assets/section-three/llave 2.webp" alt="Llave 2" class="llave2 animate-on-scroll" />
         </div>
       </div>
     </div>
@@ -79,30 +91,89 @@
     <img
       src="../assets/section-three/Textos_1.webp"
       alt="Imagen Esquina Inferior Izquierda"
-      class="imagen-esquina"
+      class="imagen-esquina animate-on-scroll"
     />
 
     <!-- Imagenes en la esquina inferior derecha -->
     <img
       src="../assets/section-three/Textos2.webp"
       alt="Imagen Esquina Inferior Derecha 1"
-      class="imagen-esquina-derecha-arriba"
+      class="imagen-esquina-derecha-arriba animate-on-scroll"
     />
     <img
       src="../assets/section-three/Logo Total SNaP.webp"
       alt="Imagen Esquina Inferior Derecha 2"
-      class="imagen-esquina-derecha-abajo"
+      class="imagen-esquina-derecha-abajo animate-on-scroll"
     />
   </section>
 </template>
 
+
 <script>
 export default {
   name: "SectionThree",
+  mounted() {
+    const options = {
+      root: null, // Viewport
+      threshold: 0.1, // Trigger when 10% of the element is visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, options);
+
+    // Observa todos los elementos con la clase 'animate-on-scroll'
+    const elements = this.$refs.section.querySelectorAll(".animate-on-scroll");
+    elements.forEach((el) => observer.observe(el));
+  },
 };
 </script>
 
+
 <style scoped>
+@keyframes rotate-circle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.imagen-rotacion {
+  animation: rotate-circle 2s linear infinite;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+}
+
+.llave1 {
+  position: absolute;
+  top: 394px;
+  left: 766px;
+  width: 60px;
+  z-index: 3;
+}
+
+.llave2 {
+  position: absolute;
+  top: 404px;
+  left: 1091px;
+  width: 54px;
+  z-index: 3;
+}
+
+
 section {
   position: relative;
   margin-top: 20px;
