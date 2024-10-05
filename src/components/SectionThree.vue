@@ -173,8 +173,8 @@ section {
 .subtititulo-intermedio {
   position: absolute;
   left: 871px;
-  top: 198px;
-  width: 180px;
+  top: 166px;
+  width: 190px;
   z-index: 4;
 }
 
@@ -196,18 +196,18 @@ section {
 
 .llave1 {
   position: absolute;
-    top: 381px;
-    left: 750px;
-    width: 76px;
-    z-index: 3;
+  top: 394px;
+  left: 766px;
+  width: 60px;
+  z-index: 3;
 }
 
 .llave2 {
   position: absolute;
-    top: 404px;
-    left: 1082px;
-    width: 76px;
-    z-index: 3;
+  top: 404px;
+  left: 1091px;
+  width: 54px;
+  z-index: 3;
 }
 
 /* Clase para la imagen adicional ubicada en la esquina inferior izquierda */
