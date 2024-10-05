@@ -174,7 +174,7 @@ export default {
 /* Imagen en la esquina superior izquierda */
 .image-top-left {
   position: absolute;
-  top: 110px;
+  top: 85px;
   left: 100px;
   width: 397px; /* Ajusta el tamaño según lo necesites */
   z-index: 10; /* Asegurar que esté encima de todos los elementos */
