@@ -15,7 +15,7 @@
           <iframe 
             src="https://player.vimeo.com/video/999685698?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1"
             frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+            allow="fullscreen; picture-in-picture; clipboard-write"
             title="Video en Modal"
             class="modal-video"
             allowfullscreen>
