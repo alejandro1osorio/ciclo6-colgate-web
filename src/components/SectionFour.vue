@@ -4,6 +4,7 @@
     <div class="image-container">
       <img src="../assets/section-four/Líneas_1.png" alt="Imagen 1" class="image-one" />
       <img src="../assets/section-four/Crema.png" alt="Imagen 2" class="image-two" />
+      <img src="../assets/section-four/Banner.png" alt="Imagen Izquierda" class="image-left" />
     </div>
   </div>
 </template>
@@ -51,5 +52,13 @@ export default {
   right: 50px; /* Ajusta la distancia desde el borde derecho */
   width: 370px; /* Tamaño aumentado de la imagen 2 */
   z-index: 3; /* Encima de la imagen 1 */
+}
+
+.image-left {
+  position: absolute;
+  bottom: 20px;
+  left: 41px; /* Ubica la imagen en la esquina inferior izquierda */
+  width: 870px; /* Ajusta el tamaño de la imagen izquierda */
+  z-index: 1; /* Debajo de la imagen 2 */
 }
 </style>
