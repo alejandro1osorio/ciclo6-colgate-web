@@ -25,6 +25,12 @@
           <button class="close-button" @click="showVideo = false">Cerrar</button>
         </div>
       </div>
+
+      <!-- Imágenes adicionales al lado izquierdo del iframe -->
+      <img src="../assets/section-four/Engranaje 1_1.png" alt="Imagen 1" class="extra-image image-one-extra" />
+      <img src="../assets/section-four/Engranaje 2_1.png" alt="Imagen 2" class="extra-image image-two-extra" />
+      <img src="../assets/section-four/Engranaje 3_1.png" alt="Imagen 3" class="extra-image image-three-extra" />
+      
     </div>
   </div>
 </template>
@@ -99,6 +105,33 @@ export default {
   border-radius: 50%;
   z-index: 4;
   cursor: pointer;
+}
+
+/* Imágenes adicionales al lado izquierdo del iframe */
+.extra-image {
+  position: absolute;
+  z-index: 5; /* Asegurar que estén por encima de los otros elementos */
+}
+
+/* Ubicación y tamaño personalizado para cada imagen */
+.image-one-extra {
+  top: 25%;
+  left: 18%;
+  width: 194px; /* Ajusta el tamaño de la imagen 1 */
+  transform: rotate(56deg);
+}
+
+.image-two-extra {
+  top: 47%;
+  left: 16%;
+  width: 192px; /* Ajusta el tamaño de la imagen 2 */
+  transform: rotate(236deg);
+}
+
+.image-three-extra {
+  top: 30%;
+  left: 3%;
+  width: 200px; /* Ajusta el tamaño de la imagen 3 */
 }
 
 /* Estilos del modal */
