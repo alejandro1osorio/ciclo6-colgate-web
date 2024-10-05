@@ -18,8 +18,10 @@
             allow="fullscreen; picture-in-picture; clipboard-write"
             title="Video en Modal"
             class="modal-video"
-            allowfullscreen>
+            allowfullscreen
+            muted>
           </iframe>
+
           <button class="close-button" @click="showVideo = false">Cerrar</button>
         </div>
       </div>
