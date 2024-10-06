@@ -68,6 +68,9 @@ export default {
   transform: translateX(-50%);
   cursor: pointer; /* Indica que es interactiva */
   animation: breathing 3s ease-in-out infinite; /* Animación de respiración */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Animación de respiración */
