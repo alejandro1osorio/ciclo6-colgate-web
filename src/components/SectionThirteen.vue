@@ -113,7 +113,7 @@ export default {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 110%;
   background-image: url('@/assets/section-thirteen/fondo_cepillo_periogard2.webp');
   background-size: cover;
   background-position: center;
