@@ -52,7 +52,7 @@
     <img src="../assets/section-five/Sensibilidad.png" alt="imagen 16" class="image image-16" />
     
     <!-- Imagen 17 -->
-    <!-- <img src="../assets/section-five/1.webp" alt="imagen 17" class="image image-17" /> -->
+    <img src="../assets/section-five/Disclamer.png" alt="imagen 17" class="image image-17" />
     
     <!-- Imagen 18 -->
     <!-- <img src="../assets/section-five/1.webp" alt="imagen 18" class="image image-18" /> -->
@@ -198,9 +198,10 @@ export default {
 }
 
 .image-17 {
-  top: 530px;
-  left: 800px;
+  top: 760px;
+  left: 427px;
   z-index: 18;
+  width: 350px;
 }
 
 .image-18 {
