@@ -157,10 +157,10 @@ export default {
 
 .imagen-disclaimer {
   position: absolute;
-  bottom: 30px; /* Cambiado para que esté más visible desde el fondo */
+  bottom: 45px; /* Cambiado para que esté más visible desde el fondo */
   left: 50%;
   transform: translateX(-50%);
-  z-index: 5; /* Asegura que la imagen del disclaimer esté visible */
+  z-index: 6; /* Asegura que la imagen del disclaimer esté visible */
   width: 900px; /* Modificar tamaño */
   height: auto;
 }
