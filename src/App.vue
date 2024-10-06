@@ -11,6 +11,7 @@
 
     <SectionFourteen />
     <SectionFifteen />
+    <SectionSixteen />
     <SectionSeventeen />
     <SectionEighteen />
     <SectionNineteen />
@@ -31,6 +32,7 @@ import SectionNine from './components/SectionNine.vue';
 import Hero from './components/Hero.vue';
 import SectionFourteen from './components/SectionFourteen.vue';
 import SectionFifteen from './components/SectionFifteen.vue';
+import SectionSixteen from './components/SectionSixteen.vue';
 import SectionSeventeen from './components/SectionSeventeen.vue';
 import SectionEighteen from './components/SectionEighteen.vue';
 import SectionNineteen from './components/SectionNineteen.vue';
@@ -51,6 +53,7 @@ export default {
     Hero,
     SectionFourteen,
     SectionFifteen,
+    SectionSixteen,
     SectionSeventeen,
     SectionEighteen,
     SectionNineteen,
