@@ -73,7 +73,7 @@ export default {
   background-color: #5e6766;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 109vh;
   overflow: hidden;
 }
 
