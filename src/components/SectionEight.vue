@@ -1,6 +1,6 @@
 <template>
   <div class="section-image">
-    <!-- Imagen de fondo principal -->
+    <!-- Imagen de fondo principal con rotación aplicada -->
     <img src="../assets/section-eight/líneas.webp" alt="Background" class="background" />
 
     <!-- Imagen 1 (flecha verde izquierda) -->
@@ -12,8 +12,8 @@
     <!-- Imagen 3 (flecha verde derecha) -->
     <img src="../assets/section-eight/Enjuague.webp" alt="Imagen 3" class="img-right" />
 
-    <!-- Imagen de fondo duplicada con z-index más alto -->
-    <img src="../assets/section-eight/líneas.webp" alt="Background" class="background-overlay" />
+    <!-- Imagen de fondo duplicada con rotación aplicada -->
+    <img src="../assets/section-eight/líneas.webp" alt="Background Overlay" class="background-overlay" />
   </div>
 </template>
 
@@ -38,33 +38,34 @@ export default {
   height: 100%;
   object-fit: cover;
   position: absolute;
-  top: 0;
+  top: 54px;
   left: 0;
   z-index: 1;
+  transform: rotate(378deg); /* Gira la imagen de fondo 15 grados */
 }
 
 .img-left {
   position: absolute;
-  top: 20%;
-  left: 15%;
-  width: 10%;
+  top: 38%;
+  left: 31%;
+  width: 9%;
   z-index: 2;
 }
 
 .img-center {
   position: absolute;
-  top: 30%;
-  left: 45%;
-  width: 15%;
+  top: 45%;
+  left: 39%;
+  width: 13%;
   z-index: 2;
 }
 
 .img-right {
   position: absolute;
-  top: 25%;
-  right: 10%;
-  width: 12%;
-  z-index: 2;
+  top: 26%;
+  right: 26%;
+  width: 23%;
+  z-index: 3;
 }
 
 .background-overlay {
@@ -72,8 +73,9 @@ export default {
   height: 100%;
   object-fit: cover;
   position: absolute;
-  top: 0;
+  top: 54px;
   left: 0;
-  z-index: 3; /* Superior a las demás imágenes */
+  z-index: 3;
+  transform: rotate(378deg); /* Gira la imagen de fondo duplicada 15 grados */
 }
 </style>
