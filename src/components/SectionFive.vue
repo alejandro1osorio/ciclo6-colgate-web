@@ -194,7 +194,7 @@ export default {
   top: 574px;
   left: 937px;
   z-index: 17;
-  width: 156px;
+  width: 196px;
 }
 
 .image-17 {
