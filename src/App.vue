@@ -9,6 +9,7 @@
     <SectionNine />
     <!-- <Hero /> -->
 
+    <SectionThirteen />
     <SectionFourteen />
     <SectionFifteen />
     <SectionSixteen />
@@ -29,7 +30,8 @@ import SectionThree from './components/SectionThree.vue';
 import SectionFour from './components/SectionFour.vue';
 import SectionEight from './components/SectionEight.vue';
 import SectionNine from './components/SectionNine.vue';
-import Hero from './components/Hero.vue';
+/* import Hero from './components/Hero.vue'; */
+import SectionThirteen from './components/SectionThirteen.vue';
 import SectionFourteen from './components/SectionFourteen.vue';
 import SectionFifteen from './components/SectionFifteen.vue';
 import SectionSixteen from './components/SectionSixteen.vue';
@@ -37,8 +39,8 @@ import SectionSeventeen from './components/SectionSeventeen.vue';
 import SectionEighteen from './components/SectionEighteen.vue';
 import SectionNineteen from './components/SectionNineteen.vue';
 import SectionTwenty from './components/SectionTwenty.vue';
-import Features from './components/Features.vue';
-import Footer from './components/Footer.vue';
+/* import Features from './components/Features.vue';
+import Footer from './components/Footer.vue'; */
 
 export default {
   name: 'App',
@@ -50,7 +52,7 @@ export default {
     SectionFour,
     SectionEight,
     SectionNine,
-    Hero,
+    SectionThirteen,
     SectionFourteen,
     SectionFifteen,
     SectionSixteen,
@@ -58,8 +60,6 @@ export default {
     SectionEighteen,
     SectionNineteen,
     SectionTwenty,
-    Features,
-    Footer,
   },
 };
 </script>
