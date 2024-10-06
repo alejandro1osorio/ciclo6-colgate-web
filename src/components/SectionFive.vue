@@ -3,6 +3,10 @@
     <!-- Imagen de fondo, ahora centrada horizontalmente y posicionada por encima de las otras imágenes -->
     <img src="../assets/section-five/Plegadiza crema.png" alt="background" class="background-img" />
 
+    <!-- Imagen centrada en la parte superior -->
+    <img src="../assets/section-five/titulo-de-beneficios.webp" alt="imagen superior" class="image-superior" />
+    <img src="../assets/section-five/Beneifcios.png" alt="imagen superior" class="image-superior img-sup-2" />
+
     <!-- Imagen 1 -->
     <img src="../assets/section-five/1.webp" alt="imagen 1" class="image image-1" />
     
@@ -85,10 +89,26 @@ export default {
   height: auto;
   z-index: 21; /* La imagen de fondo está por encima de todas las otras imágenes */
   left: 50%;
-  transform: translateX(-50%); /* Asegura que esté centrada horizontalmente */
+  transform: translateX(-50%);
 }
 
-/* Estilos para las imágenes, cada una con un z-index diferente */
+/* Imagen centrada en la parte superior */
+.image-superior {
+  position: absolute;
+  top: 60px; /* Puedes ajustar este valor para cambiar la altura */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 22; /* Asegura que esté por encima de las demás imágenes */
+  width: 534px;
+  height: auto;
+}
+
+.img-sup-2 {
+  width: 247px;
+  top: 90px;
+}
+
+/* Estilos para las demás imágenes, cada una con un z-index diferente */
 .image {
   position: absolute;
 }
