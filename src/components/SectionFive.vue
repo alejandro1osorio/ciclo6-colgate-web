@@ -70,19 +70,17 @@ export default {
 
 <style scoped>
 .section-container {
-  width: 1180px;
-  height: 820px;
+  background-color: #5e6766;
   position: relative;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center; /* Centrado horizontalmente */
-  align-items: center; /* Centrado verticalmente */
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
 /* Imagen de fondo centrada y posicionada hacia abajo */
 .background-img {
   position: absolute;
-  top: 377px; /* Ajusta este valor para posicionarla un poco hacia abajo */
+  top: 458px; /* Ajusta este valor para posicionarla un poco hacia abajo */
   width: auto;
   height: auto;
   z-index: 21; /* La imagen de fondo está por encima de todas las otras imágenes */
@@ -96,49 +94,49 @@ export default {
 }
 
 .image-1 {
-  top: 434px;
+  top: 544px;
   left: 227px;
   z-index: 2;
 }
 
 .image-2 {
-  top: 297px;
+  top: 408px;
   left: 234px;
   z-index: 3;
 }
 
 .image-3 {
-  top: 206px;
+  top: 316px;
   left: 300px;
   z-index: 4;
 }
 
 .image-4 {
-  top: 175px;
+  top: 284px;
   left: 423px;
   z-index: 5;
 }
 
 .image-5 {
-  top: 174px;
+  top: 284px;
   left: 580px;
   z-index: 6;
 }
 
 .image-6 {
-  top: 207px;
+  top: 317px;
   left: 582px;
   z-index: 7;
 }
 
 .image-7 {
-  top: 298px;
+  top: 410px;
   left: 581px;
   z-index: 8;
 }
 
 .image-8 {
-  top: 434px;
+  top: 546px;
   left: 581px;
   z-index: 9;
 }
