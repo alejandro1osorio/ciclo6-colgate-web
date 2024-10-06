@@ -5,6 +5,7 @@
     <SectionTwo />
     <SectionThree />
     <SectionFour />
+    <SectionFive />
     <SectionEight />
     <SectionNine />
     <!-- <Hero /> -->
@@ -28,6 +29,7 @@ import SectionOne from './components/SectionOne.vue';
 import SectionTwo from './components/SectionTwo.vue';
 import SectionThree from './components/SectionThree.vue';
 import SectionFour from './components/SectionFour.vue';
+import SectionFive from './components/SectionFive.vue';
 import SectionEight from './components/SectionEight.vue';
 import SectionNine from './components/SectionNine.vue';
 /* import Hero from './components/Hero.vue'; */
@@ -50,6 +52,7 @@ export default {
     SectionTwo,
     SectionThree,
     SectionFour,
+    SectionFive,
     SectionEight,
     SectionNine,
     SectionThirteen,
