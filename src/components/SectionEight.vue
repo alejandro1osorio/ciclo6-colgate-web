@@ -33,7 +33,7 @@ export default {
 .section-image {
   position: relative;
     width: 100%;
-    height: 102vh;
+    height: 110vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,9 +95,9 @@ export default {
 /* Nueva imagen en la esquina inferior izquierda */
 .img-bottom-left {
   position: absolute;
-    bottom: -2px;
-    left: 243px;
-    width: 381px;
-    z-index: 5;
+  bottom: -2px;
+  left: 243px;
+  width: 381px;
+  z-index: 5;
 }
 </style>
