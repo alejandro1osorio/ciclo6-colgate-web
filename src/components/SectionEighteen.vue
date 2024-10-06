@@ -1,32 +1,32 @@
 <template>
-  <sectioneighteen class="section-eighteen">
+  <div class="section-eighteen">
     <!-- Logo Colgate -->
-    <sectioneighteen class="logo-colgate">
+    <div class="logo-colgate">
       <img :src="require('@/assets/section-eighteen/logo-colgate-sensitive.webp')" alt="Colgate Logo" />
-    </sectioneighteen>
+    </div>
 
     <!-- Imagen de los cepillos -->
-    <sectioneighteen class="two-brushes">
+    <div class="two-brushes">
       <img :src="require('@/assets/section-eighteen/2cepillos-blister.webp')" alt="Cepillos Colgate" />
-    </sectioneighteen>
+    </div>
 
     <!-- Cabeza del cepillo -->
-    <sectioneighteen class="brush-head">
+    <div class="brush-head">
       <img :src="require('@/assets/section-eighteen/3cabeza-cepillo.webp')" alt="Cabeza del Cepillo" />
-    </sectioneighteen>
+    </div>
 
     <!-- Texto suavidad -->
-    <sectioneighteen class="text-three">
+    <div class="text-three">
       <img :src="require('@/assets/section-eighteen/4texto_3.webp')" alt="Texto Suavidad" />
-    </sectioneighteen>
+    </div>
 
     <!-- Texto cerdas -->
-    <sectioneighteen class="text-two">
+    <div class="text-two">
       <img :src="require('@/assets/section-eighteen/5texto_2.webp')" alt="Texto Cerdas" />
-    </sectioneighteen>
+    </div>
 
     <!-- Slider vertical con flechas -->
-    <sectioneighteen class="slider-vertical">
+    <div class="slider-vertical">
       <div class="arrow up" @click="scrollUp">▲</div> <!-- Flecha superior -->
       <div class="slider-content" ref="sliderContent">
         <img :src="require('@/assets/section-eighteen/Cuadro-1.webp')" alt="Cuadro 1" />
@@ -36,8 +36,8 @@
         <img :src="require('@/assets/section-eighteen/Cuadro-5.webp')" alt="Cuadro 5" />
       </div>
       <div class="arrow down" @click="scrollDown">▼</div> <!-- Flecha inferior -->
-    </sectioneighteen>
-  </sectioneighteen>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -60,18 +60,17 @@ export default {
 .section-eighteen {
   width: 1180px;
   height: 820px;
-  background-color: none;
   position: relative;
-  overflow: hidden;
+  overflow: hidden; /* Evitar que los elementos se salgan del contenedor */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
-  /* Agregar imagen de fondo */
+  /* Imagen de fondo */
   background-image: url('@/assets/section-eighteen/fondo-sensitive.webp');
-  background-size: cover; /* Ajustar la imagen al tamaño del contenedor */
-  background-position: center; /* Centrar la imagen */
-  background-repeat: no-repeat; /* Evitar que la imagen se repita */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .logo-colgate {
@@ -144,15 +143,14 @@ export default {
   top: -30px;
   right: 40px;
   width: 250px;
-  height: 879px;
-  background-color: none;
-  z-index: 4; /* Capa superior */
+  height: calc(100% - 40px); /* Ajuste para mantener el slider dentro del contenedor */
+  z-index: 4;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  
+
   /* Aplicar desvanecimiento en los bordes */
   mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 80%, transparent 100%);
 }
