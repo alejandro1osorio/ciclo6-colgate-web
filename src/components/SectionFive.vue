@@ -28,28 +28,28 @@
     <img src="../assets/section-five/8.webp" alt="imagen 8" class="image image-8" />
     
     <!-- Imagen 9 -->
-    <!-- <img src="../assets/section-five/1.webp" alt="imagen 9" class="image image-9" /> -->
+    <img src="../assets/section-five/Placa.png" alt="imagen 9" class="image image-9" />
     
     <!-- Imagen 10 -->
-   <!--  <img src="../assets/section-five/1.webp" alt="imagen 10" class="image image-10" /> -->
+    <img src="../assets/section-five/Condiciones de encías_1.webp" alt="imagen 10" class="image image-10" />
     
     <!-- Imagen 11 -->
-    <!-- <img src="../assets/section-five/1.webp" alt="imagen 11" class="image image-11" /> -->
+    <img src="../assets/section-five/Halitosis.png" alt="imagen 11" class="image image-11" />
     
     <!-- Imagen 12 -->
-    <!-- <img src="../assets/section-five/1.webp" alt="imagen 12" class="image image-12" /> -->
+    <img src="../assets/section-five/Cálculos_1.webp" alt="imagen 12" class="image image-12" />
     
     <!-- Imagen 13 -->
-    <!-- <img src="../assets/section-five/1.webp" alt="imagen 13" class="image image-13" /> -->
+    <img src="../assets/section-five/Erosión del esmalte.png" alt="imagen 13" class="image image-13" />
     
     <!-- Imagen 14 -->
-    <!-- <img src="../assets/section-five/1.webp" alt="imagen 14" class="image image-14" /> -->
+    <img src="../assets/section-five/Caries.png" alt="imagen 14" class="image image-14" />
     
     <!-- Imagen 15 -->
-    <!-- <img src="../assets/section-five/1.webp" alt="imagen 15" class="image image-15" /> -->
+    <img src="../assets/section-five/Pigmentaciones.png" alt="imagen 15" class="image image-15" />
     
     <!-- Imagen 16 -->
-    <!-- <img src="../assets/section-five/1.webp" alt="imagen 16" class="image image-16" /> -->
+    <img src="../assets/section-five/Sensibilidad.png" alt="imagen 16" class="image image-16" />
     
     <!-- Imagen 17 -->
     <!-- <img src="../assets/section-five/1.webp" alt="imagen 17" class="image image-17" /> -->
@@ -70,7 +70,7 @@ export default {
 
 <style scoped>
 .section-container {
-  background-color: #5e6766;
+  background-color: #fff; /*#5e6766*/
   position: relative;
   width: 100%;
   height: 109vh;
@@ -141,52 +141,60 @@ export default {
   z-index: 9;
 }
 
-/* .image-9 {
-  top: 290px;
-  left: 900px;
+.image-9 {
+  top: 575px;
+  left: 38px;
   z-index: 10;
+  width: 196px;
 }
 
 .image-10 {
-  top: 320px;
-  left: 100px;
+  top: 430px;
+  left: 56px;
   z-index: 11;
+  width: 196px;
 }
 
 .image-11 {
-  top: 350px;
-  left: 200px;
+  top: 319px;
+  left: 167px;
   z-index: 12;
+  width: 196px;
 }
 
 .image-12 {
-  top: 380px;
+  top: 256px;
   left: 300px;
   z-index: 13;
+  width: 196px;
 }
 
 .image-13 {
-  top: 410px;
-  left: 400px;
+  top: 252px;
+  left: 624px;
   z-index: 14;
+  width: 196px;
 }
 
 .image-14 {
-  top: 440px;
-  left: 500px;
+  top: 313px;
+  left: 809px;
   z-index: 15;
+  width: 196px;
 }
 
 .image-15 {
-  top: 470px;
-  left: 600px;
+  top: 384px;
+  left: 882px;
   z-index: 16;
+  width: 196px;
 }
 
 .image-16 {
-  top: 500px;
-  left: 700px;
+  top: 574px;
+  left: 937px;
   z-index: 17;
+  width: 156px;
 }
 
 .image-17 {
@@ -205,5 +213,5 @@ export default {
   top: 590px;
   left: 1000px;
   z-index: 20;
-} */
+}
 </style>
