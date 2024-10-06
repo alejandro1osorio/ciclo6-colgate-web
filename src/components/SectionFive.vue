@@ -109,130 +109,25 @@ export default {
 }
 
 /* Estilos para las demás imágenes, cada una con un z-index diferente */
-.image {
-  position: absolute;
-}
+.image { position: absolute; }
+.image-1 { top: 544px; left: 227px; z-index: 2; }
+.image-2 { top: 408px; left: 234px; z-index: 3; }
+.image-3 { top: 316px; left: 300px; z-index: 4; }
+.image-4 { top: 284px; left: 423px; z-index: 5; }
+.image-5 { top: 284px; left: 580px; z-index: 6; }
+.image-6 { top: 317px; left: 582px; z-index: 7; }
+.image-7 { top: 410px; left: 581px; z-index: 8; }
+.image-8 { top: 546px; left: 581px; z-index: 9; }
+.image-9 { top: 575px; left: 38px; z-index: 10; width: 196px; }
+.image-10 { top: 430px; left: 56px; z-index: 11; width: 196px; }
+.image-11 { top: 319px; left: 167px; z-index: 12; width: 196px; }
+.image-12 { top: 256px; left: 300px; z-index: 13; width: 196px; }
+.image-13 { top: 252px; left: 624px; z-index: 14; width: 196px; }
+.image-14 { top: 313px; left: 809px; z-index: 15; width: 196px; }
+.image-15 { top: 384px; left: 882px; z-index: 16; width: 196px; }
+.image-16 { top: 574px; left: 937px; z-index: 17; width: 196px; }
+.image-17 { top: 760px; left: 427px; z-index: 18; width: 350px; }
+.image-18 { top: 560px; left: 900px; z-index: 19; }
+.image-19 { top: 590px; left: 1000px; z-index: 20; }
 
-.image-1 {
-  top: 544px;
-  left: 227px;
-  z-index: 2;
-}
-
-.image-2 {
-  top: 408px;
-  left: 234px;
-  z-index: 3;
-}
-
-.image-3 {
-  top: 316px;
-  left: 300px;
-  z-index: 4;
-}
-
-.image-4 {
-  top: 284px;
-  left: 423px;
-  z-index: 5;
-}
-
-.image-5 {
-  top: 284px;
-  left: 580px;
-  z-index: 6;
-}
-
-.image-6 {
-  top: 317px;
-  left: 582px;
-  z-index: 7;
-}
-
-.image-7 {
-  top: 410px;
-  left: 581px;
-  z-index: 8;
-}
-
-.image-8 {
-  top: 546px;
-  left: 581px;
-  z-index: 9;
-}
-
-.image-9 {
-  top: 575px;
-  left: 38px;
-  z-index: 10;
-  width: 196px;
-}
-
-.image-10 {
-  top: 430px;
-  left: 56px;
-  z-index: 11;
-  width: 196px;
-}
-
-.image-11 {
-  top: 319px;
-  left: 167px;
-  z-index: 12;
-  width: 196px;
-}
-
-.image-12 {
-  top: 256px;
-  left: 300px;
-  z-index: 13;
-  width: 196px;
-}
-
-.image-13 {
-  top: 252px;
-  left: 624px;
-  z-index: 14;
-  width: 196px;
-}
-
-.image-14 {
-  top: 313px;
-  left: 809px;
-  z-index: 15;
-  width: 196px;
-}
-
-.image-15 {
-  top: 384px;
-  left: 882px;
-  z-index: 16;
-  width: 196px;
-}
-
-.image-16 {
-  top: 574px;
-  left: 937px;
-  z-index: 17;
-  width: 196px;
-}
-
-.image-17 {
-  top: 760px;
-  left: 427px;
-  z-index: 18;
-  width: 350px;
-}
-
-.image-18 {
-  top: 560px;
-  left: 900px;
-  z-index: 19;
-}
-
-.image-19 {
-  top: 590px;
-  left: 1000px;
-  z-index: 20;
-}
 </style>

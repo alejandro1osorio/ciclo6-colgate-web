@@ -13,7 +13,7 @@
       <div v-if="showVideo" class="modal">
         <div class="modal-content">
           <iframe 
-            src="https://player.vimeo.com/video/999685698?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1"
+            src="https://player.vimeo.com/video/1016842689?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
             frameborder="0"
             allow="fullscreen; picture-in-picture; clipboard-write"
             title="Video en Modal"
