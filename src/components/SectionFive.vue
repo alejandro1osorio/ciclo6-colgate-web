@@ -34,6 +34,9 @@
 
     <!-- Imagen Disclamer en la parte inferior centrada -->
     <img src="../assets/section-five/Disclamer.png" alt="imagen disclamer" class="image image-disclamer" />
+
+    <!-- Imagen Plegadiza crema centrada en la parte inferior del contenedor -->
+<!--     <img src="../assets/section-five/Plegadiza crema.png" alt="imagen plegadiza crema" class="image image-plegadiza" /> -->
   </div>
 </template>
 
@@ -65,12 +68,9 @@ export default {
   height: auto;
   z-index: 21;
   left: 50%;
-  transform: translateX(-50%);
+  /* transform: translateX(-50%); */
   cursor: pointer; /* Indica que es interactiva */
   animation: breathing 3s ease-in-out infinite; /* Animación de respiración */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Animación de respiración */
@@ -349,6 +349,19 @@ export default {
   position: absolute;
   transform: translateX(-50%);
   z-index: 23;
+  opacity: 100;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Estilos para la imagen Plegadiza crema centrada en la parte inferior del contenedor */
+.image-plegadiza {
+  bottom: 20px;
+  left: 50%;
+  width: 300px;
+  height: auto;
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 24;
   opacity: 100;
   transition: opacity 1s ease-in-out;
 }
