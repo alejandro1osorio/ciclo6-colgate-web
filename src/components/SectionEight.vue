@@ -14,6 +14,9 @@
 
     <!-- Imagen de fondo duplicada con rotación aplicada -->
     <img src="../assets/section-eight/líneas.webp" alt="Background Overlay" class="background-overlay" />
+
+    <!-- Nueva imagen centrada en la parte superior -->
+    <img src="../assets/section-eight/Textos.webp" alt="Nueva Imagen" class="img-top-center" />
   </div>
 </template>
 
@@ -41,7 +44,7 @@ export default {
   top: 54px;
   left: 0;
   z-index: 1;
-  transform: rotate(378deg); /* Gira la imagen de fondo 15 grados */
+  transform: rotate(378deg); /* Gira la imagen de fondo */
 }
 
 .img-left {
@@ -76,6 +79,15 @@ export default {
   top: 54px;
   left: 0;
   z-index: 3;
-  transform: rotate(378deg); /* Gira la imagen de fondo duplicada 15 grados */
+  transform: rotate(378deg); /* Gira la imagen de fondo duplicada */
+}
+
+.img-top-center {
+  position: absolute;
+  top: 10px; /* Ajusta este valor según sea necesario para la distancia desde la parte superior */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26%; /* Ajusta el tamaño según lo que necesites */
+  z-index: 4; /* Asegura que esté por encima de todas las demás imágenes */
 }
 </style>
