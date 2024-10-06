@@ -16,7 +16,7 @@
     <SectionNineteen />
     <SectionTwenty />
     <!-- <Features /> -->
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
 
