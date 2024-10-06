@@ -7,7 +7,7 @@
     <SectionFour />
     <SectionEight />
     <SectionNine />
-    <Hero />
+    <!-- <Hero /> -->
 
     <SectionFourteen />
     <SectionFifteen />
@@ -15,7 +15,7 @@
     <SectionEighteen />
     <SectionNineteen />
     <SectionTwenty />
-    <Features />
+    <!-- <Features /> -->
     <Footer />
   </div>
 </template>
