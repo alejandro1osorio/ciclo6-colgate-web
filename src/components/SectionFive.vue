@@ -67,18 +67,18 @@ export default {
   left: 50%;
   transform: translateX(-50%);
   cursor: pointer; /* Indica que es interactiva */
-  animation: breathing 3s ease-in-out infinite; /* Animación de respiración */
+  /* animation: breathing 3s ease-in-out infinite; */ /* Animación de respiración */
 }
 
 /* Animación de respiración */
-@keyframes breathing {
+/* @keyframes breathing {
   0%, 100% {
     transform: translateX(-50%) scale(1);
   }
   50% {
     transform: translateX(-50%) scale(1.05);
   }
-}
+} */
 
 /* Permitir modificar la posición y tamaño de la imagen titulo-de-beneficios.webp */
 .img-titulo {
