@@ -1,6 +1,9 @@
 <template>
-  <sectionsixteen class="section-sixteen">
-    <!-- Contenedor amarillo -->
+  <div class="section-image">
+    <!-- Contenedor transparente encima del contenedor principal -->
+    <div class="contenedor-transparente"></div>
+
+    <!-- Contenedor amarillo principal -->
     <div class="contenedor-amarillo">
       <!-- Imagen de fondo con animación de respiración y rotación -->
       <div class="fondo-animado"></div>
@@ -34,7 +37,7 @@
         </div>
       </div>
     </div>
-  </sectionsixteen>
+  </div>
 </template>
 
 <script>
@@ -44,13 +47,25 @@ export default {
 </script>
 
 <style scoped>
-.section-sixteen {
+.section-image {
+  position: relative;
+  width: 1180px;
+  height: 820px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1180px;
-  height: 820px;
-  position: relative;
+}
+
+/* Contenedor transparente de 500px por 820px, fijo en la parte superior */
+.contenedor-transparente {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  width: 500px;
+  height: 620px;
+  background-color: rgba(223, 0, 0, 0.568); 
+  transform: translateX(-50%);
+  z-index: 2; 
 }
 
 /* Contenedor principal amarillo de 1180x820 */
