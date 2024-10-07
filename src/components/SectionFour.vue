@@ -57,6 +57,18 @@ export default {
 </script>
 
 <style scoped>
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .responsive-section {
   position: relative;
   width: 100%;
@@ -70,7 +82,7 @@ export default {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 1;
+  z-index: 0;
 }
 
 .image-container {
@@ -84,7 +96,8 @@ export default {
   bottom: 0;
   right: 0;
   width: 600px;
-  z-index: 2;
+  z-index: 0;
+  animation: breathe 5s ease-in-out infinite;
 }
 
 .image-two {
@@ -93,6 +106,7 @@ export default {
   right: 50px;
   width: 370px;
   z-index: 3;
+  animation: breathe 5s ease-in-out infinite;
 }
 
 .image-left {
