@@ -1,7 +1,6 @@
 <template>
   <div class="section-image">
     <!-- Imagen de fondo principal con rotación aplicada -->
-    <img src="../assets/section-eight/lineas-regimen-total.png" alt="Background" class="background" />
 
     <!-- Imagen 1 (flecha verde izquierda) -->
     <img src="../assets/section-eight/cepillo .webp" alt="Imagen 1" class="img-left" />
@@ -12,8 +11,8 @@
     <!-- Imagen 3 (flecha verde derecha) -->
     <img src="../assets/section-eight/Enjuague.webp" alt="Imagen 3" class="img-right" />
 
-    <!-- Imagen de fondo duplicada con rotación aplicada -->
-    <img src="../assets/section-eight/lineas-regimen-total.png" alt="Background Overlay" class="background-overlay" />
+    <!-- Imagen de fondo duplicada con rotación aplicada y animación de respiración -->
+    <img src="../assets/section-eight/lineas-regimen-total.png" alt="Background Overlay" class="background-overlay breathing" />
 
     <!-- Nueva imagen centrada en la parte superior -->
     <img src="../assets/section-eight/Textos.webp" alt="Nueva Imagen" class="img-top-center" />
@@ -32,11 +31,11 @@ export default {
 <style scoped>
 .section-image {
   position: relative;
-    width: 100%;
-    height: 110vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .background {
@@ -70,7 +69,7 @@ export default {
   top: 341px;
   right: 391px;
   width: 215px;
-  z-index: 1;
+  z-index: 3;
 }
 
 .background-overlay {
@@ -79,8 +78,9 @@ export default {
   position: absolute;
   top: 217px;
   left: 146px;
-  z-index: 4;
+  z-index: 1;
   transform: rotate(365deg); /* Gira la imagen de fondo duplicada */
+  animation: breathing 3s ease-in-out infinite; /* Animación de respiración */
 }
 
 .img-top-center {
@@ -95,9 +95,19 @@ export default {
 /* Nueva imagen en la esquina inferior izquierda */
 .img-bottom-left {
   position: absolute;
-  bottom: -2px;
-  left: 243px;
-  width: 381px;
+  bottom: 10px;
+  left: 299px;
+  width: 594px;
   z-index: 5;
+}
+
+/* Animación de respiración */
+@keyframes breathing {
+  0%, 100% {
+    transform: rotate(365deg) scale(1);
+  }
+  50% {
+    transform: rotate(365deg) scale(1.05);
+  }
 }
 </style>
