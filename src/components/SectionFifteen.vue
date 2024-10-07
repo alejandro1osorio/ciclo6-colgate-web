@@ -252,7 +252,7 @@ export default {
 
 /* Agregar margen superior específico para la imagen textos_cuadros.webp */
 .slide-item img[alt="Textos Cuadros"] {
-  margin-top: 20px;
+  margin-top: 163px;
 }
 
 .slide-item img {
