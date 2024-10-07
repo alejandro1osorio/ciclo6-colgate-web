@@ -48,8 +48,8 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100vh;
+  width: 1180px;
+  height: 820px;
   position: relative;
 }
 
@@ -108,6 +108,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 
 /* Permitir cambiar la posición del cepillo con animación de rotación */
@@ -137,7 +138,7 @@ export default {
   overflow-y: scroll;
   overflow-x: hidden; /* Evitar el desplazamiento horizontal */
   scroll-behavior: smooth;
-  z-index: 2; /* El slider estará por encima del cepillo y el enjuague */
+  z-index: 1; /* El slider estará por encima del cepillo y el enjuague */
 }
 
 /* Estilos para cada imagen dentro del slider */
