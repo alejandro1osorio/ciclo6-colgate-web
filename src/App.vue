@@ -19,8 +19,9 @@
     <SectionEighteen />
     <SectionNineteen />
     <SectionTwenty />
+    <SectionFinal />
     <!-- <Features /> -->
-    <!-- <Footer /> -->
+    <Footer />
   </div>
 </template>
 
@@ -44,8 +45,8 @@ import SectionSeventeen from './components/SectionSeventeen.vue';
 import SectionEighteen from './components/SectionEighteen.vue';
 import SectionNineteen from './components/SectionNineteen.vue';
 import SectionTwenty from './components/SectionTwenty.vue';
-/* import Features from './components/Features.vue';
-import Footer from './components/Footer.vue'; */
+import SectionFinal from './components/SectionFinal.vue';
+/* import Features from './components/Features.vue'; */
 
 export default {
   name: 'App',
@@ -68,6 +69,7 @@ export default {
     SectionEighteen,
     SectionNineteen,
     SectionTwenty,
+    SectionFinal,
   },
 };
 </script>
