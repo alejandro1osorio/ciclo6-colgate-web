@@ -303,7 +303,7 @@ export default {
   }
 
   .side-image {
-    left: 70%; /* Ajuste de la imagen lateral */
+    left: 72%; /* Ajuste de la imagen lateral */
     max-width: 150px;
   }
 
