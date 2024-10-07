@@ -63,7 +63,7 @@ export default {
   left: 50%;
   width: 500px;
   height: 620px;
-  background-color: rgba(223, 0, 0, 0.568); 
+  background-color: rgba(255, 255, 255, 0); 
   transform: translateX(-50%);
   z-index: 2; 
 }
