@@ -183,6 +183,7 @@ export default {
 }
 
 /* Imagen de fondo */
+/* Imagen de fondo */
 .fondo {
   position: absolute;
   top: 0;
@@ -248,11 +249,6 @@ export default {
   justify-content: center;
   align-items: center;
   margin: 10px 0;
-}
-
-/* Agregar margen superior específico para la imagen textos_cuadros.webp */
-.slide-item img[alt="Textos Cuadros"] {
-  margin-top: 163px;
 }
 
 .slide-item img {
@@ -354,6 +350,7 @@ export default {
     opacity: 1;
   }
 }
+
 
 .animacion-enjuague {
   animation: bajarDesdeCentro 0.5s ease-out forwards;
