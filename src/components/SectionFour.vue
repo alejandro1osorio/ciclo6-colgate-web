@@ -62,7 +62,19 @@ export default {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.05);
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes breathe2 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
   }
   100% {
     transform: scale(1);
@@ -106,7 +118,7 @@ export default {
   right: 50px;
   width: 370px;
   z-index: 3;
-  animation: breathe 5s ease-in-out infinite;
+  animation: breathe2 5s ease-in-out infinite;
 }
 
 .image-left {
