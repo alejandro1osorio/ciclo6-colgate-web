@@ -81,6 +81,24 @@ export default {
   }
 }
 
+@keyframes rotateLeft {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotateRight {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .responsive-section {
   position: relative;
   width: 100%;
@@ -144,25 +162,25 @@ export default {
   cursor: pointer;
 }
 
-
 /* Imágenes adicionales al lado izquierdo del iframe */
 .extra-image {
   position: absolute;
   z-index: 5; /* Asegurar que estén por encima de los otros elementos */
 }
 
-.extra-image-new {
-  position: absolute;
-  z-index: 6; /* Encima de las imágenes anteriores */
-  transform: translate(-50%, -50%); /* Centramos la nueva imagen sobre la original */
+.image-three-extra {
+  top: 30%;
+  left: 6%;
+  width: 200px;
+  animation: rotateLeft 10s linear infinite; /* Añade la animación de rotación hacia la izquierda */
 }
 
-/* Ubicación y tamaño personalizado para cada imagen original */
 .image-one-extra {
   top: 25%;
   left: 21%;
   width: 194px;
   transform: rotate(56deg);
+  animation: rotateRight 8s linear infinite; /* Añade la animación de rotación hacia la derecha */
 }
 
 .image-two-extra {
@@ -170,12 +188,13 @@ export default {
   left: 19%;
   width: 192px;
   transform: rotate(236deg);
+  animation: rotateRight 8s linear infinite; /* Añade la animación de rotación hacia la derecha */
 }
 
-.image-three-extra {
-  top: 30%;
-  left: 6%;
-  width: 200px;
+.extra-image-new {
+  position: absolute;
+  z-index: 6; /* Encima de las imágenes anteriores */
+  transform: translate(-50%, -50%); /* Centramos la nueva imagen sobre la original */
 }
 
 /* Nuevas imágenes centradas sobre las anteriores */
