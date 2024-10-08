@@ -44,7 +44,7 @@ export default {
   position: absolute;
   top: 217px;
   left: 146px;
-  z-index: 3;
+  z-index: 0;
   transform: rotate(365deg);
 }
 
