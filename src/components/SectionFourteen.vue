@@ -179,10 +179,10 @@ export default {
 .imagen-sello {
   position: absolute;
   top: 72%;
-  left: 94px;
+  left: 1024px;
   transform: translateY(-50%); /* Centra verticalmente la imagen sobre la imagen central */
   z-index: 10; /* Asegura que esté por encima de todos los elementos */
-  width: 168px; /* Ajusta el tamaño de la imagen */
+  width: 126px; /* Ajusta el tamaño de la imagen */
   height: auto;
   opacity: 0; /* Inicialmente oculta */
   transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transiciones suaves */
