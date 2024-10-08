@@ -14,24 +14,7 @@
 
 <script>
 export default {
-  mounted() {
-    window.addEventListener('scroll', this.handleScroll);
-  },
-  beforeDestroy() {
-    window.removeEventListener('scroll', this.handleScroll);
-  },
-  methods: {
-    handleScroll() {
-      const container = document.querySelector('.container');
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-      if (scrollTop > 100) {
-        container.classList.add('scrolled');
-      } else {
-        container.classList.remove('scrolled');
-      }
-    }
-  }
+  
 }
 </script>
 
