@@ -1,15 +1,17 @@
 <template>
-  <div id="app">
-    <div v-if="currentView === 'home'" class="button-container">
-      <button @click="showSection('perioCirugia', 'perio/cirugia/implantes/prosto')">PERIO CIRUGÍA IMPLANTES PROSTO</button>
-      <button @click="showSection('orthoOdontoped', 'ortho/odontoped')">ORTHO ODONTOPED</button>
-      <button @click="showSection('generalEndoEstetica', 'general/endodoncia/estetica')">GENERAL ENDODONCIA ESTETICA</button>
+  <div v-if="appVisible" id="app">
+    <img src="../src/assets/ciclo 6.png" alt="Header Image" class="header-image colgate" /> <!-- Imagen centrada -->
+    <div v-if="currentView === 'home'" class="button-container botones">
+      <button @click="showSection('perioCirugia', 'perio/cirugia/implantes/prosto')" class="button-perio">PERIO CIRUGÍA IMPLANTES PROSTO</button>
+      <button @click="showSection('orthoOdontoped', 'ortho/odontoped')" class="button-ortho">ORTHO ODONTOPED</button>
+      <button @click="showSection('generalEndoEstetica', 'general/endodoncia/estetica')" class="button-general">GENERAL ENDODONCIA ESTETICA</button>
     </div>
-    <div v-else>
-      <button @click="showHome" class="home-button" v-show="currentView !== 'home'">Volver al Home</button>
-      <div v-for="section in currentSections" :key="section">
-        <component :is="section" />
-      </div>
+  </div>
+  <div v-else>
+    <!-- Cambio del botón por un SVG -->
+    <img @click="showHome" class="home-button" v-show="currentView !== 'home'" src="../src/assets/home_ciclo6.svg" alt="Home Button" />
+    <div v-for="section in currentSections" :key="section">
+      <component :is="section" />
     </div>
   </div>
 </template>
@@ -60,10 +62,12 @@ export default {
     return {
       currentView: 'home',
       currentSections: [],
+      appVisible: true, // Nueva variable para controlar la visibilidad del contenedor principal
     };
   },
   methods: {
     showSection(sectionGroup, slug) {
+      this.appVisible = false; // Ocultar el componente App.vue
       switch (sectionGroup) {
         case 'perioCirugia':
           this.currentSections = [
@@ -73,23 +77,48 @@ export default {
             'SectionFour',
             'SectionFive',
             'SectionEleven',
-          ];
-          break;
-        case 'orthoOdontoped':
-          this.currentSections = [
             'SectionEight',
             'SectionNine',
             'SectionTwelve',
             'SectionThirteen',
             'SectionFourteen',
+            'SectionSeventeen',
+            'SectionEighteen',
+            'SectionNineteen',
+            'SectionTwenty',
+            'SectionFinal',
+          ];
+          break;
+        case 'orthoOdontoped':
+          this.currentSections = [
+            'SectionOne',
+            'SectionTwo',
+            'SectionThree',
+            'SectionFour',
+            'SectionFive',
+            'SectionEleven',
+            'SectionEight',
             'SectionFifteen',
+            'SectionSixteen',
+            'SectionFourteen',
+            'SectionNineteen',
+            'SectionTwenty',
+            'SectionFinal',
           ];
           break;
         case 'generalEndoEstetica':
           this.currentSections = [
-            'SectionSixteen',
+            'SectionOne',
+            'SectionTwo',
+            'SectionThree',
+            'SectionFour',
+            'SectionFive',
+            'SectionEleven',
+            'SectionEight',
             'SectionSeventeen',
             'SectionEighteen',
+            'SectionNine',
+            'SectionFourteen',
             'SectionNineteen',
             'SectionTwenty',
             'SectionFinal',
@@ -100,6 +129,7 @@ export default {
       window.history.pushState(null, '', `/${slug}`);
     },
     showHome() {
+      this.appVisible = true; // Volver a mostrar el componente App.vue
       this.currentView = 'home';
       this.currentSections = [];
       window.history.pushState(null, '', '/');
@@ -128,27 +158,65 @@ body {
   margin: 0;
 }
 
+.header-image {
+  display: block;
+  margin: 10px auto;
+  width: 70%;
+  max-width: 500px; /* Ajuste del tamaño de la imagen */
+}
+
+.colgate {
+  margin-top: 100px;
+  width: 380px;
+}
+
 .button-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  height: 100vh;
+  align-items: center;
+  height: calc(100vh - 486px); /* Ajuste para subir los botones más hacia arriba */
 }
 
 button {
   margin: 10px;
   padding: 15px 30px;
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para los botones */
+  border: none;
+  border-radius: 40px;
+  transition: all 0.3s ease;
 }
 
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.35);
+}
+
+/* Colores de los botones */
+.button-perio {
+  background-color: #287db2; /* Color rojo-naranja */
+  color: white;
+}
+
+.button-ortho {
+  background-color: #56ad96; /* Color verde */
+  color: white;
+}
+
+.button-general {
+  background-color: #bea43F; /* Color azul */
+  color: white;
+}
+
+/* Estilos para el botón de home usando el SVG en la esquina inferior derecha */
 .home-button {
   position: fixed;
-  top: 20px;
-  left: 20px;
-  padding: 10px 20px;
-  font-size: 14px;
+  bottom: 20px; /* Posiciona en la parte inferior */
+  right: 20px; /* Posiciona en la parte derecha */
+  width: 40px; /* Ajusta el tamaño del SVG */
+  height: 40px;
   cursor: pointer;
   z-index: 100;
 }

@@ -59,30 +59,30 @@
       <div class="contenedor-derecho" style="margin-right: 60px;">
         <div class="contenedor-imagen4 animate-on-scroll">
           <img
-            src="../assets/section-three/Fómula Bio Activo.webp"
+            src="../assets/section-three/1formula-a.webp"
             alt="Imagen 4"
             class="imagen-4"
           />
           <img
-            src="../assets/section-three/Bio Activo.webp"
+            src="../assets/section-three/1formula-c.webp"
             alt="Otra Imagen Debajo de 4"
             class="imagen-debajo-4"
           />
-          <img src="../assets/section-three/LLave .webp" alt="Llave 1" class="llave1 animate-on-scroll" />
+          <img src="../assets/section-three/1formula-b.webp" alt="Llave 1" class="llave1 animate-on-scroll" />
         </div>
 
         <div class="contenedor-imagen5 animate-on-scroll">
           <img
-            src="../assets/section-three/Fórmula No Bio Activo.webp"
+            src="../assets/section-three/2formula-a.webp"
             alt="Imagen 5"
             class="imagen-5"
           />
           <img
-            src="../assets/section-three/No Bio Activo.png"
+            src="../assets/section-three/2formula-c.webp"
             alt="Otra Imagen Debajo de 5"
             class="imagen-debajo-5"
           />
-          <img src="../assets/section-three/llave 2.webp" alt="Llave 2" class="llave2 animate-on-scroll" />
+          <img src="../assets/section-three/2formula-b.webp" alt="Llave 2" class="llave2 animate-on-scroll" />
         </div>
       </div>
     </div>
