@@ -78,7 +78,7 @@ export default {
   position: absolute;
   top: 217px;
   left: 146px;
-  z-index: 0;
+  z-index: -1;
   transform: rotate(365deg); /* Gira la imagen de fondo duplicada */
   animation: breathing 3s ease-in-out infinite; /* Animación de respiración */
 }
@@ -89,7 +89,7 @@ export default {
   left: 50%;
   transform: translateX(-50%);
   width: 40%;
-  z-index: 1;
+  z-index: -1;
 }
 
 /* Nueva imagen en la esquina inferior izquierda */
@@ -98,7 +98,7 @@ export default {
   bottom: 10px;
   left: 299px;
   width: 594px;
-  z-index: 1;
+  z-index: 0;
 }
 
 /* Animación de respiración */

@@ -88,7 +88,7 @@ export default {
   width: 1180px;
   height: 820px;
   background-color: none;
-  z-index: 1;
+  z-index: -1;
 }
 
 .section-slider-container {
@@ -102,7 +102,7 @@ export default {
   overflow-x: hidden;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  z-index: 2;
+  z-index: 0;
 }
 
 .section-slider-container::-webkit-scrollbar {
@@ -120,7 +120,7 @@ export default {
   top: 100px;
   left: 100px;
   width: 300px;
-  z-index: 2;
+  z-index: 0;
 }
 
 .slider-barra {
@@ -133,14 +133,14 @@ export default {
   top: 50px;
   left: 500px;
   width: 400px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .slider-lines {
   top: 130px;
   left: 90px;
   width: 1100px;
-  z-index: 1;
+  z-index: 0;
 }
 
 .slider-texto-cerdas {
@@ -153,49 +153,49 @@ export default {
   top: 1130px;
   left: 160px;
   width: 160px;
-  z-index: 5;
+  z-index: 0;
 }
 
 .slider-video-conicas-2 {
   top: 1100px;
   left: 890px;
   width: 160px;
-  z-index: 5;
+  z-index: 0;
 }
 
 .slider-texto-redondeadas {
   top: 980px;
   left: 99px;
   width: 400px;
-  z-index: 3;
+  z-index: 0;
 }
 
 .slider-touch-1 {
   top: 1090px;
   left: 460px;
   width: 80px;
-  z-index: 4;
+  z-index: 0;
 }
 
 .slider-touch-2 {
   top: 1029px;
   left: 670px;
   width: 80px;
-  z-index: 4;
+  z-index: 0;
 }
 
 .slider-cabeza-cepillo {
   top: 1050px;
   left: 0px;
   width: 800px;
-  z-index: 2;
+  z-index: -1;
 }
 
 .slider-texto-conicas {
   top: 975px;
   left: 706px;
   width: 400px;
-  z-index: 3;
+  z-index: 1;
 }
 
 .transparent-container {
@@ -259,7 +259,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9;
+
   pointer-events: auto;
 }
 
