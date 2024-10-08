@@ -179,7 +179,7 @@ export default {
   height: 820px;
   position: relative;
   overflow: hidden;
-  z-index: 2; /* Contenedor en un nivel por encima del slider */
+  z-index: 0; /* Contenedor en un nivel por encima del slider */
 }
 
 /* Imagen de fondo */

@@ -77,7 +77,7 @@ export default {
   position: absolute;
   top: 0px;
   left: 20px;
-  z-index: 4; /* Capa superior */
+  z-index: 1; /* Capa superior */
 }
 
 .logo-colgate img {
@@ -89,7 +89,7 @@ export default {
   position: absolute;
   top: 140px;
   left: 45px;
-  z-index: 5; /* Capa superior */
+  z-index: 0; /* Capa superior */
 }
 
 .two-brushes img {
@@ -116,7 +116,7 @@ export default {
   top: 85px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 3; /* Colocar el texto por encima del cepillo */
+  z-index: 1; /* Colocar el texto por encima del cepillo */
 }
 
 .text-three img {
@@ -129,7 +129,7 @@ export default {
   top: 625px;
   left: 53%;
   transform: translateX(-50%);
-  z-index: 3; /* Colocar el texto por encima del cepillo */
+  z-index: 1; /* Colocar el texto por encima del cepillo */
 }
 
 .text-two img {
@@ -144,7 +144,7 @@ export default {
   right: 40px;
   width: 250px;
   height: calc(100% - 40px); /* Ajuste para mantener el slider dentro del contenedor */
-  z-index: 4;
+  z-index: 1;
   overflow: hidden;
   display: flex;
   flex-direction: column;

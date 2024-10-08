@@ -4,7 +4,7 @@
     <div v-if="currentView === 'home'" class="button-container botones">
       <button @click="showSection('perioCirugia', 'perio/cirugia/implantes/prosto')" class="button-perio">PERIO CIRUGÍA IMPLANTES PROSTO</button>
       <button @click="showSection('orthoOdontoped', 'ortho/odontoped')" class="button-ortho">ORTHO ODONTOPED</button>
-      <button @click="showSection('generalEndoEstetica', 'general/endodoncia/estetica')" class="button-general">GENERAL ENDODONCIA ESTETICA</button>
+      <button @click="showSection('generalEndoEstetica', 'general/endodoncia/estetica')" class="button-general">GENERAL ENDODONCIA ESTÉTICA</button>
     </div>
   </div>
   <div v-else>

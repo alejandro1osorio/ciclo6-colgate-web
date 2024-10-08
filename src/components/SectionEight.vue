@@ -53,7 +53,7 @@ export default {
   top: 363px;
   left: 380px;
   width: 92px;
-  z-index: 4;
+  z-index: 1;
 }
 
 .img-center {
@@ -61,7 +61,7 @@ export default {
   top: 374px;
   left: 449px;
   width: 13%;
-  z-index: 3;
+  z-index: 1;
 }
 
 .img-right {
@@ -69,7 +69,7 @@ export default {
   top: 341px;
   right: 391px;
   width: 215px;
-  z-index: 3;
+  z-index: 1;
 }
 
 .background-overlay {
@@ -78,7 +78,7 @@ export default {
   position: absolute;
   top: 217px;
   left: 146px;
-  z-index: 1;
+  z-index: 0;
   transform: rotate(365deg); /* Gira la imagen de fondo duplicada */
   animation: breathing 3s ease-in-out infinite; /* Animación de respiración */
 }
@@ -89,7 +89,7 @@ export default {
   left: 50%;
   transform: translateX(-50%);
   width: 40%;
-  z-index: 4;
+  z-index: 1;
 }
 
 /* Nueva imagen en la esquina inferior izquierda */
@@ -98,7 +98,7 @@ export default {
   bottom: 10px;
   left: 299px;
   width: 594px;
-  z-index: 5;
+  z-index: 1;
 }
 
 /* Animación de respiración */

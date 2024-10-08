@@ -82,7 +82,7 @@ export default {
   position: relative;
   overflow: hidden; /* Dejar ocultas partes fuera del contenedor */
   background-color: none; /* Color amarillo con algo de opacidad para asegurarse de que se vea */
-  z-index: 2; /* Asegura que el contenedor esté por encima de otros elementos */
+  z-index: 0; /* Asegura que el contenedor esté por encima de otros elementos */
 }
 
 .fondo {

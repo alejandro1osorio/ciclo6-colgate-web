@@ -39,7 +39,7 @@ export default {
   height: 100%;
   background-image: url("../assets/section-nine/Fondo.webp");
   object-fit: cover;
-  z-index: 1;
+  z-index: 0;
 }
 
 .image-stack {
@@ -50,7 +50,7 @@ export default {
 
 .img1 {
   position: absolute;
-  z-index: 4;
+  z-index: 1;
   top: 20%; 
   right: 10%; 
   width: 300px; 
@@ -58,7 +58,7 @@ export default {
 
 .img2 {
   position: absolute;
-  z-index: 6;
+  z-index: 1;
   top: 10%; 
   right: 5%; 
   width: 320px; 
@@ -66,7 +66,7 @@ export default {
 
 .img3 {
   position: absolute;
-  z-index: 3;
+  z-index: 0;
   top: 60%;  
   right: 20%; 
   width: 280px; 
@@ -74,7 +74,7 @@ export default {
 
 .img4 {
   position: absolute;
-  z-index: 5;
+  z-index: 1;
   top: 40%;  
   right: 15%; 
   width: 310px; 
@@ -86,7 +86,7 @@ export default {
   top: 0; /* Tocando el borde superior */
   left: 98px; /* Tocando el borde izquierdo */
   width: 100px; /* Ajuste de tamaño */
-  z-index: 7; /* Por encima de todas las otras imágenes */
+  z-index: 1; /* Por encima de todas las otras imágenes */
 }
 
 /* Nueva imagen debajo de la imagen superior izquierda */
@@ -95,7 +95,7 @@ export default {
   top: 120px; /* Ajuste para estar debajo de la imagen superior izquierda */
   left: 75px; /* Alineada con la imagen superior izquierda */
   width: 100px;
-  z-index: 6; /* Z-index diferente para que no afecte la imagen superior izquierda */
+  z-index: 1; /* Z-index diferente para que no afecte la imagen superior izquierda */
 }
 
 /* Nueva imagen debajo de img-below-new */
@@ -104,7 +104,7 @@ export default {
   top: 240px; /* Ajustada para estar debajo de img-below-new */
   left: 225px;
   width: 100px;
-  z-index: 9; /* Z-index más alto para que esté encima de todas las demás imágenes */
+  z-index: 1; /* Z-index más alto para que esté encima de todas las demás imágenes */
 }
 
 

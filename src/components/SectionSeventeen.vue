@@ -70,7 +70,7 @@ export default {
   position: absolute;
   top: 0px;
   left: 20px;
-  z-index: 3;
+  z-index: 1;
 }
 
 .logo-colgate img {
@@ -110,7 +110,7 @@ export default {
   width: 60%; /* Reducimos el ancho del slider para evitar desbordes */
   height: 100%;
   background-color: transparent;
-  z-index: 2;
+  z-index: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
