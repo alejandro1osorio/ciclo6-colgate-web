@@ -34,6 +34,14 @@
         :src="require('@/assets/section-fourteen/disclamer_1.webp')"
         alt="Disclamer"
       />
+
+      <!-- Nueva imagen Sello_1.webp con animación controlada -->
+      <img
+        class="imagen-sello"
+        :class="{ 'animacion-activa': aplicarAnimacionSello }"
+        :src="require('@/assets/section-fourteen/Sello_1.webp')"
+        alt="Sello"
+      />
     </div>
   </section>
 </template>
@@ -44,11 +52,13 @@ export default {
   data() {
     return {
       aplicarOpacidad: false, // Controla si la imagen central tiene la animación de opacidad
+      aplicarAnimacionSello: false, // Controla si la imagen Sello_1.webp tiene la animación
     };
   },
   methods: {
     activarOpacidad() {
       this.aplicarOpacidad = true; // Activa la animación de opacidad al hacer clic en el enjuague
+      this.aplicarAnimacionSello = true; // Activa la animación de la imagen sello
     },
   },
 };
@@ -163,5 +173,24 @@ export default {
   z-index: 6; /* Asegura que la imagen del disclaimer esté visible */
   width: 900px; /* Modificar tamaño */
   height: auto;
+}
+
+/* Nueva imagen Sello_1.webp */
+.imagen-sello {
+  position: absolute;
+  top: 72%;
+  left: 94px;
+  transform: translateY(-50%); /* Centra verticalmente la imagen sobre la imagen central */
+  z-index: 10; /* Asegura que esté por encima de todos los elementos */
+  width: 168px; /* Ajusta el tamaño de la imagen */
+  height: auto;
+  opacity: 0; /* Inicialmente oculta */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transiciones suaves */
+}
+
+/* Clase que se activará al hacer clic en la imagen del enjuague */
+.imagen-sello.animacion-activa {
+  opacity: 1; /* La imagen aparece */
+  transform: translateY(-50%) scale(1.1); /* Pequeño zoom al aparecer */
 }
 </style>
