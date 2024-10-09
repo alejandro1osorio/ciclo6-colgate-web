@@ -133,14 +133,14 @@ export default {
   top: 50px;
   left: 500px;
   width: 400px;
-  z-index: 1;
+  z-index: 0;
 }
 
 .slider-lines {
   top: 130px;
   left: 90px;
   width: 1100px;
-  z-index: 0;
+  z-index: -1;
 }
 
 .slider-texto-cerdas {
@@ -195,7 +195,7 @@ export default {
   top: 975px;
   left: 706px;
   width: 400px;
-  z-index: 1;
+  z-index: 0;
 }
 
 .transparent-container {
